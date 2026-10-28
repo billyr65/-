@@ -1,3 +1,46 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研究方法與動機｜畢業生流向調查</title>
-  <link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-icon">🎓</span>畢業生流向調查</a><button class="menu-toggle" type="button" aria-label="開啟導覽選單" aria-controls="main-nav" aria-expanded="false">☰</button><nav class="nav" id="main-nav" aria-label="網站主選單"><a href="index.html" >首頁</a><div class="dropdown"><a href="research.html" class="active" aria-current="page">研究方法與動機 ▾</a><ul class="submenu"><li><a href="research.html#data">資料介紹</a></li><li><a href="research.html#method">研究方法</a></li><li><a href="research.html#motivation">研究動機</a></li></ul></div><div class="dropdown"><a href="results.html" >研究成果 ▾</a><ul class="submenu"><li><a href="results.html#one-year">畢業滿一年</a></li><li><a href="results.html#three-years">畢業滿三年</a></li><li><a href="results.html#five-years">畢業滿五年</a></li></ul></div><a href="conclusion.html" >結論</a></nav></div></header><section class="page-top"><div class="container"><h1>研究方法與動機</h1><p>資料介紹、研究方法及研究動機整合於同一頁面。</p></div></section><main class="container content-wrap"><div class="subnav"><a href="#data">資料介紹</a><a href="#method">研究方法</a><a href="#motivation">研究動機</a></div><section class="content-card" id="data"><h2>資料介紹</h2><p>本專題以畢業滿一年、滿三年及滿五年的畢業生流向調查問卷為資料來源，涵蓋不同學年度的調查資料。各調查階段之問卷題項和資料年度可能不同，因此分析前先確認欄位定義與有效回答數。</p><h3>研究對象</h3><div class="chips"><span class="chip">畢業滿一年</span><span class="chip">畢業滿三年</span><span class="chip">畢業滿五年</span></div><div class="placeholder">各階段實際學年度、樣本數、資料來源細節：待補入</div></section><section class="content-card" id="method"><h2>研究方法</h2><h3>資料整理與轉換</h3><p>針對問卷中的數字編碼與文字選項進行對應轉換，整理欄位名稱與資料格式，以利後續閱讀及統計。</p><h3>資料清理</h3><p>檢查資料欄位、缺漏值及有效回答情形，確認統計過程的計算基礎，並依問卷題型處理單選與複選資料。</p><h3>統計分析與視覺化</h3><p>使用 R 進行描述性統計，彙整工作職業類型、平均月收入及學習經驗等指標；再以 R Markdown 與 Shiny 呈現圖表、表格及互動式查詢。</p><div class="chips"><span class="chip">R</span><span class="chip">R Markdown</span><span class="chip">Shiny</span></div></section><section class="content-card" id="motivation"><h2>研究動機</h2><p>畢業生離校後的就業發展與在學學習經驗，是理解高等教育人才培育成果的重要參考。然而原始問卷包含多種題型及編碼，若僅以原始表格呈現，不易快速掌握重點。</p><p>因此，本專題希望透過一致的資料處理流程與清楚的視覺化介面，協助使用者理解不同畢業階段的調查結果，並讓各學年度資料更容易被查閱與說明。</p><h3>研究目的</h3><p>整理畢業生流向資料、呈現主要統計指標、建置便於瀏覽的互動式成果網站，提供學校檢視課程與教學規劃的參考。</p></section></main><footer><div class="container footer-inner"><span>畢業生流向調查｜專題成果展示 · 靜宜大學資訊科學暨大數據分析與應用學系</span><span>版型參考：<a href="https://html5up.net/verti">HTML5 UP Verti</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span></div></footer>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>研究方法與動機｜畢業生流向調查</title>
+  <link rel="stylesheet" href="style.css"></head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner"><a class="brand" href="index.html"><span class="brand-icon">
+        🎓</span>畢業生流向調查</a><button class="menu-toggle" type="button" aria-label="開啟導覽選單" aria-controls="main-nav" aria-expanded="false">☰</button>
+        <nav class="nav" id="main-nav" aria-label="網站主選單">
+          <a href="index.html" >首頁</a><div class="dropdown"><a href="research.html" class="active" aria-current="page">研究方法與動機 ▾</a>
+            <ul class="submenu">
+              <li><a href="research.html#data">資料介紹</a></li><li><a href="research.html#method">研究方法</a>
+              </li><li><a href="research.html#motivation">研究動機</a>
+              </li></ul>
+          </div><div class="dropdown"><a href="results.html" >研究成果 ▾</a>
+            <ul class="submenu"><li><a href="results.html#one-year">畢業滿一年</a>
+            </li><li><a href="results.html#three-years">畢業滿三年</a></li>
+              <li><a href="results.html#five-years">畢業滿五年</a>
+              </li></ul>
+          </div><a href="conclusion.html" >結論</a>
+        </nav>
+      </div>
+    </header>
+    <section class="page-top">
+      <div class="container">
+        <h1>研究方法與動機</h1><p>資料介紹、研究方法及研究動機整合於同一頁面。</p>
+      </div></section>
+    <main class="container content-wrap">
+      <div class="subnav">
+        <a href="#data">資料介紹</a>
+        <a href="#method">研究方法</a>
+        <a href="#motivation">研究動機</a></div>
+      <section class="content-card" id="data">
+        <h2>資料介紹</h2><p>本專題以畢業滿一年、滿三年及滿五年的畢業生流向調查問卷為資料來源，涵蓋不同學年度的調查資料。各調查階段之問卷題項和資料年度可能不同，因此分析前先確認欄位定義與有效回答數。</p>
+        <h3>研究對象</h3><div class="chips"><span class="chip">畢業滿一年</span><span class="chip">畢業滿三年</span><span class="chip">畢業滿五年</span></div><div class="placeholder">各階段實際學年度、樣本數、資料來源細節：待補入</div></section><section class="content-card" id="method"><h2>研究方法</h2>
+          <h3>資料整理與轉換</h3><p>針對問卷中的數字編碼與文字選項進行對應轉換，整理欄位名稱與資料格式，以利後續閱讀及統計。</p>
+          <h3>資料清理</h3><p>檢查資料欄位、缺漏值及有效回答情形，確認統計過程的計算基礎，並依問卷題型處理單選與複選資料。</p>
+          <h3>統計分析與視覺化</h3><p>使用 R 進行描述性統計，彙整工作職業類型、平均月收入及學習經驗等指標；再以 R Markdown 與 Shiny 呈現圖表、表格及互動式查詢。</p>
+          <div class="chips"><span class="chip">R</span><span class="chip">R Markdown</span><span class="chip">Shiny</span></div></section>
+      <section class="content-card" id="motivation">
+        <h2>研究動機</h2><p>畢業生離校後的就業發展與在學學習經驗，是理解高等教育人才培育成果的重要參考。然而原始問卷包含多種題型及編碼，若僅以原始表格呈現，不易快速掌握重點。</p>
+        <p>因此，本專題希望透過一致的資料處理流程與清楚的視覺化介面，協助使用者理解不同畢業階段的調查結果，並讓各學年度資料更容易被查閱與說明。</p>
+        <h3>研究目的</h3><p>整理畢業生流向資料、呈現主要統計指標、建置便於瀏覽的互動式成果網站，提供學校檢視課程與教學規劃的參考。</p></section></main>
+    <footer><div class="container footer-inner"><span>畢業生流向調查｜專題成果展示 · 靜宜大學資訊科學暨大數據分析與應用學系</span><span>版型參考：<a href="https://html5up.net/verti">HTML5 UP Verti</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span></div></footer>
   <script src="script.js" defer></script></body></html>
