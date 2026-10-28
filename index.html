@@ -1,12 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="畢業生流向調查專題成果展示：研究摘要、專題團隊及畢業滿一年、三年、五年調查分析。">
-  <title>畢業生流向調查｜專題成果展示</title>
-  <style>
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>首頁｜畢業生流向調查</title><style>
     :root {
       --navy: #142643;
       --navy-deep: #0d1d35;
@@ -19,267 +11,68 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
-      background: #f6f8fd;
-      color: var(--ink);
-      line-height: 1.9;
-    }
+    body { margin: 0; font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif; background: #f6f8fd; color: var(--ink); line-height: 1.9; }
     a { color: inherit; text-decoration: none; }
     .container { width: min(1160px, calc(100% - 40px)); margin: auto; }
 
     /* 上方導覽列 */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--navy);
-      color: #fff;
-      box-shadow: 0 3px 16px #08132726;
-    }
-    .header-inner {
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-      font-size: 20px;
-      font-weight: 800;
-      white-space: nowrap;
-    }
+    .site-header { position: sticky; top: 0; z-index: 100; background: var(--navy); color: #fff; box-shadow: 0 3px 16px #08132726; }
+    .header-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 13px; font-size: 20px; font-weight: 800; white-space: nowrap; }
     .brand-icon { color: var(--pink); font-size: 28px; }
     .nav { display: flex; align-items: stretch; gap: 6px; }
-    .nav > a, .dropdown > a {
-      display: block;
-      padding: 11px 17px;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 700;
-      transition: background .2s;
-    }
-    .nav > a:hover, .dropdown > a:hover, .nav .active {
-      background: var(--pink);
-    }
+    .nav > a, .dropdown > a { display: block; padding: 11px 17px; border-radius: 8px; font-size: 15px; font-weight: 700; transition: background .2s; }
+    .nav > a:hover, .dropdown > a:hover, .nav .active { background: var(--pink); }
     .dropdown { position: relative; }
-    .submenu {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      min-width: 185px;
-      padding: 8px;
-      margin: 0;
-      list-style: none;
-      background: #fff;
-      color: var(--ink);
-      border-radius: 10px;
-      box-shadow: var(--shadow);
-    }
-    .submenu a {
-      display: block;
-      padding: 9px 14px;
-      border-radius: 7px;
-      font-size: 14px;
-    }
-    .submenu a:hover, .submenu a:focus-visible {
-      background: #fff0f5;
-      color: #b83f68;
-    }
-    .dropdown:hover .submenu, .dropdown:focus-within .submenu {
-      display: block;
-    }
-    .menu-toggle {
-      display: none;
-      background: transparent;
-      color: #fff;
-      border: 1px solid #ffffff77;
-      border-radius: 7px;
-      padding: 6px 12px;
-      font-size: 23px;
-      cursor: pointer;
-    }
+    .submenu { display: none; position: absolute; left: 0; top: 100%; min-width: 185px; padding: 8px; margin: 0; list-style: none; background: #fff; color: var(--ink); border-radius: 10px; box-shadow: var(--shadow); }
+    .submenu a { display: block; padding: 9px 14px; border-radius: 7px; font-size: 14px; }
+    .submenu a:hover, .submenu a:focus-visible { background: #fff0f5; color: #b83f68; }
+    .dropdown:hover .submenu, .dropdown:focus-within .submenu { display: block; }
+    .menu-toggle { display: none; background: transparent; color: #fff; border: 1px solid #ffffff77; border-radius: 7px; padding: 6px 12px; font-size: 23px; cursor: pointer; }
 
     /* 首頁形象封面：圖片可自行置換 */
-    .hero {
-      position: relative;
-      min-height: 470px;
-      color: white;
-      display: flex;
-      align-items: center;
-      background-image:
-        linear-gradient(
-          100deg,
-          rgba(9,28,55,.85) 0%,
-          rgba(19,54,90,.58) 57%,
-          rgba(19,54,90,.28) 100%
-        ),
-        url('images/graduation-bg.jpg');
-      background-color: #32669b;
-      background-position: center;
-      background-size: cover;
-    }
+    .hero { position: relative; min-height: 470px; color: white; display: flex; align-items: center;
+      background-image: linear-gradient(100deg, rgba(9,28,55,.85) 0%, rgba(19,54,90,.58) 57%, rgba(19,54,90,.28) 100%);
+      background-color: #32669b; background-position: center; background-size: cover; }
     .hero-inner { padding: 60px 0 105px; }
-    .eyebrow {
-      font-size: 14px;
-      letter-spacing: .23em;
-      color: #d7e9ff;
-    }
-    h1 {
-      font-size: clamp(35px, 5.4vw, 68px);
-      line-height: 1.35;
-      letter-spacing: .03em;
-      margin: 18px 0 16px;
-      font-weight: 900;
-    }
-    .hero p {
-      max-width: 700px;
-      font-size: clamp(16px, 1.7vw, 21px);
-      margin: 0;
-    }
-    .accent-line {
-      display: block;
-      width: 80px;
-      height: 5px;
-      margin-top: 20px;
-      background: var(--pink);
-      border-radius: 4px;
-    }
+    .eyebrow { font-size: 14px; letter-spacing: .23em; color: #d7e9ff; }
+    h1 { font-size: clamp(35px, 5.4vw, 68px); line-height: 1.35; letter-spacing: .03em; margin: 18px 0 16px; font-weight: 900; }
+    .hero p { max-width: 700px; font-size: clamp(16px, 1.7vw, 21px); margin: 0; }
+    .accent-line { display: block; width: 80px; height: 5px; margin-top: 20px; background: var(--pink); border-radius: 4px; }
 
     /* 教授及組員：緊接在標題封面下方 */
-    .team-panel {
-      display: grid;
-      grid-template-columns: 1fr 1.15fr;
-      position: relative;
-      z-index: 2;
-      margin-top: -62px;
-      background: #fff;
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      padding: 28px 34px;
-    }
-    .team-item {
-      display: flex;
-      align-items: center;
-      gap: 19px;
-      padding: 5px 14px;
-    }
-    .team-item + .team-item {
-      border-left: 2px solid var(--line);
-      padding-left: 34px;
-    }
-    .team-icon {
-      flex: 0 0 68px;
-      height: 68px;
-      display: grid;
-      place-items: center;
-      background: #fcecf2;
-      color: #e85983;
-      border-radius: 50%;
-      font-size: 27px;
-    }
-    .team-item:nth-child(2) .team-icon {
-      background: #eaf2ff;
-      color: var(--blue);
-    }
-    .team-label {
-      color: #1e578b;
-      font-size: 17px;
-      font-weight: 900;
-    }
-    .team-details {
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.8;
-    }
+    .team-panel { display: grid; grid-template-columns: 1fr 1.15fr; position: relative; z-index: 2; margin-top: -62px; background: #fff; border-radius: 20px; box-shadow: var(--shadow); padding: 28px 34px; }
+    .team-item { display: flex; align-items: center; gap: 19px; padding: 5px 14px; }
+    .team-item + .team-item { border-left: 2px solid var(--line); padding-left: 34px; }
+    .team-icon { flex: 0 0 68px; height: 68px; display: grid; place-items: center; background: #fcecf2; color: #e85983; border-radius: 50%; font-size: 27px; }
+    .team-item:nth-child(2) .team-icon { background: #eaf2ff; color: var(--blue); }
+    .team-label { color: #1e578b; font-size: 17px; font-weight: 900; }
+    .team-details { color: var(--muted); font-size: 15px; line-height: 1.8; }
     .team-details strong { color: var(--ink); font-size: 18px; }
 
     /* 研究摘要 */
     .abstract-section { padding: 42px 0 90px; }
-    .abstract-card {
-      background: white;
-      border-radius: 20px;
-      padding: 38px 42px;
-      box-shadow: var(--shadow);
-    }
-    .section-heading {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 21px;
-    }
-    .section-heading::before {
-      content: "";
-      width: 7px;
-      height: 39px;
-      background: var(--pink);
-      border-radius: 6px;
-    }
-    .section-heading h2 {
-      font-size: 31px;
-      margin: 0;
-      color: var(--navy);
-    }
-    .abstract-card p {
-      font-size: 17px;
-      margin: 0 0 20px;
-      text-align: justify;
-    }
+    .abstract-card { background: white; border-radius: 20px; padding: 38px 42px; box-shadow: var(--shadow); }
+    .section-heading { display: flex; align-items: center; gap: 16px; margin-bottom: 21px; }
+    .section-heading::before { content: ""; width: 7px; height: 39px; background: var(--pink); border-radius: 6px; }
+    .section-heading h2 { font-size: 31px; margin: 0; color: var(--navy); }
+    .abstract-card p { font-size: 17px; margin: 0 0 20px; text-align: justify; }
     .abstract-card p:last-child { margin-bottom: 0; }
-    footer {
-      background: var(--navy-deep);
-      color: #c9d6e8;
-      padding: 27px 0;
-      font-size: 13px;
-    }
-    .footer-inner {
-      display: flex;
-      gap: 16px;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+    footer { background: var(--navy-deep); color: #c9d6e8; padding: 27px 0; font-size: 13px; }
+    .footer-inner { display: flex; gap: 16px; justify-content: space-between; flex-wrap: wrap; }
     footer a { text-decoration: underline; }
 
     @media (max-width: 900px) {
       .brand { font-size: 17px; }
       .menu-toggle { display: inline-block; }
       .header-inner { flex-wrap: wrap; }
-      .nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        padding-bottom: 14px;
-      }
+      .nav { display: none; width: 100%; flex-direction: column; padding-bottom: 14px; }
       .nav.open { display: flex; }
       .nav > a, .dropdown > a { padding: 10px 12px; }
-      .submenu {
-        position: static;
-        display: block;
-        box-shadow: none;
-        border-radius: 8px;
-        background: #213957;
-        color: #fff;
-        margin: 3px 10px 8px;
-      }
-      .submenu a:hover, .submenu a:focus-visible {
-        background: #385477;
-        color: #fff;
-      }
-      .team-panel {
-        grid-template-columns: 1fr;
-        padding: 24px;
-      }
-      .team-item + .team-item {
-        border-left: 0;
-        border-top: 2px solid var(--line);
-        padding: 20px 14px 5px;
-        margin-top: 16px;
-      }
+      .submenu { position: static; display: block; box-shadow: none; border-radius: 8px; background: #213957; color: #fff; margin: 3px 10px 8px; }
+      .submenu a:hover, .submenu a:focus-visible { background: #385477; color: #fff; }
+      .team-panel { grid-template-columns: 1fr; padding: 24px; }
+      .team-item + .team-item { border-left: 0; border-top: 2px solid var(--line); padding: 20px 14px 5px; margin-top: 16px; }
     }
     @media (max-width: 560px) {
       .container { width: min(100% - 26px, 1160px); }
@@ -293,89 +86,41 @@
       .abstract-card p { font-size: 15px; }
       .section-heading h2 { font-size: 26px; }
     }
-  </style>
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">🎓</span>畢業生流向調查</a>
-      <button class="menu-toggle" type="button" aria-label="開啟導覽選單" aria-controls="main-nav" aria-expanded="false">☰</button>
-      <nav class="nav" id="main-nav" aria-label="網站主選單">
-        <a class="active" aria-current="page" href="index.html">首頁</a>
-        <div class="dropdown">
-          <a href="research-motivation.html">研究方法與動機 ▾</a>
-          <ul class="submenu">
-            <li><a href="data-introduction.html">資料介紹</a></li>
-            <li><a href="research-method.html">研究方法</a></li>
-            <li><a href="research-motivation.html">研究動機</a></li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a href="results.html">研究成果 ▾</a>
-          <ul class="submenu">
-            <li><a href="results-one-year.html">畢業滿一年</a></li>
-            <li><a href="results-three-years.html">畢業滿三年</a></li>
-            <li><a href="results-five-years.html">畢業滿五年</a></li>
-          </ul>
-        </div>
-        <a href="conclusion.html">結論</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" aria-labelledby="page-title">
-      <div class="container hero-inner">
-        <div class="eyebrow">GRADUATE DESTINATION SURVEY</div>
-        <h1 id="page-title">畢業生流向調查<br>專題成果展示</h1>
-        <p>透過問卷資料分析與互動式視覺化，呈現畢業生的就業情形與學習經驗。</p>
-        <span class="accent-line" aria-hidden="true"></span>
-      </div>
-    </section>
-
-    <div class="container">
-      <section class="team-panel" aria-label="指導教授與專題組員">
-        <div class="team-item">
-          <div class="team-icon" aria-hidden="true">♙</div>
-          <div>
-            <div class="team-label">指導教授</div>
-            <div class="team-details"><strong>［請填寫教授姓名］教授</strong><br>靜宜大學 資訊科學暨大數據分析與應用學系</div>
-          </div>
-        </div>
-        <div class="team-item">
-          <div class="team-icon" aria-hidden="true">♟</div>
-          <div>
-            <div class="team-label">專題組員</div>
-            <div class="team-details">組長：<strong>［請填寫組長姓名］</strong><br>組員：［請填寫全部組員姓名］</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="abstract-section" id="abstract">
-        <div class="abstract-card">
-          <div class="section-heading"><h2>研究摘要</h2></div>
-          <p>本專題以畢業滿一年、滿三年及滿五年之畢業生流向調查問卷為研究對象，整理不同學年度的問卷資料，透過資料轉換、資料清理、統計分析及視覺化技術，呈現畢業生在不同階段的就業情形與學習經驗。</p>
-          <p>研究過程中，使用 R 語言進行資料處理與統計分析，探討工作職業類型、平均月收入、目前未就業原因、在學期間對目前工作有幫助的學習經驗，以及學校應加強的能力等相關主題。實際分析項目依各階段問卷內容與資料完整性調整。</p>
-          <p>本專題結合 R Markdown 與 Shiny 建置互動式資料展示網站，整合統計圖表、資料表格及文字說明，提供使用者查閱不同調查階段與學年度的分析結果，協助學校了解畢業生流向，並作為課程規劃與教學改善的參考。</p>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>畢業生流向調查｜專題成果展示 · 靜宜大學資訊科學暨大數據分析與應用學系</span>
-      <span>版型參考：<a href="https://html5up.net/verti">HTML5 UP Verti</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('#main-nav');
-    toggle.addEventListener('click', () => {
-      const opened = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(opened));
-    });
-  </script>
-</body>
-</html>
+  
+    .page-top{background:linear-gradient(120deg,#142643,#315e99);color:white;padding:54px 0 45px}.page-top h1{font-size:clamp(30px,4vw,46px);margin:4px 0}.page-top p{margin:0;color:#e0eafa}.content-wrap{padding:38px 0 80px}.content-card{background:white;padding:32px 38px;border-radius:18px;box-shadow:var(--shadow);margin-bottom:24px;scroll-margin-top:100px}.content-card h2{font-size:25px;color:#142643;margin:0 0 16px;border-left:6px solid var(--pink);padding-left:14px}.content-card h3{font-size:19px;margin:22px 0 7px}.content-card p{margin:10px 0}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.chip{background:#edf3ff;border-radius:24px;padding:6px 14px;color:#245b9c;font-weight:700}.placeholder{padding:35px 22px;text-align:center;background:#f5f8fd;border:1px dashed #b3c4df;border-radius:12px;color:#6c7d94;margin:16px 0}.subnav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px}.subnav a{background:white;border:1px solid var(--line);padding:8px 18px;border-radius:9px;color:#245b9c;font-weight:700}.subnav a:hover{background:#eaf2ff}.muted{color:var(--muted)}@media(max-width:560px){.content-card{padding:23px 20px}}
+</style></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-icon">🎓</span>畢業生流向調查</a><button class="menu-toggle" type="button" aria-label="開啟導覽選單" aria-controls="main-nav" aria-expanded="false">☰</button><nav class="nav" id="main-nav" aria-label="網站主選單"><a href="index.html" class="active" aria-current="page">首頁</a><div class="dropdown"><a href="research.html" >研究方法與動機 ▾</a><ul class="submenu"><li><a href="research.html#data">資料介紹</a></li><li><a href="research.html#method">研究方法</a></li><li><a href="research.html#motivation">研究動機</a></li></ul></div><div class="dropdown"><a href="results.html" >研究成果 ▾</a><ul class="submenu"><li><a href="results.html#one-year">畢業滿一年</a></li><li><a href="results.html#three-years">畢業滿三年</a></li><li><a href="results.html#five-years">畢業滿五年</a></li></ul></div><a href="conclusion.html" >結論</a></nav></div></header><main>
+<section aria-labelledby="page-title" class="hero">
+<div class="container hero-inner">
+<div class="eyebrow">GRADUATE DESTINATION SURVEY</div>
+<h1 id="page-title">畢業生流向調查<br/>專題成果展示</h1>
+<p>透過問卷資料分析與互動式視覺化，呈現畢業生的就業情形與學習經驗。</p>
+<span aria-hidden="true" class="accent-line"></span>
+</div>
+</section>
+<div class="container">
+<section aria-label="指導教授與專題組員" class="team-panel">
+<div class="team-item">
+<div aria-hidden="true" class="team-icon">♙</div>
+<div>
+<div class="team-label">指導教授</div>
+<div class="team-details"><strong>［請填寫教授姓名］教授</strong><br/>靜宜大學 資訊科學暨大數據分析與應用學系</div>
+</div>
+</div>
+<div class="team-item">
+<div aria-hidden="true" class="team-icon">♟</div>
+<div>
+<div class="team-label">專題組員</div>
+<div class="team-details">組長：<strong>［請填寫組長姓名］</strong><br/>組員：［請填寫全部組員姓名］</div>
+</div>
+</div>
+</section>
+<section class="abstract-section" id="abstract">
+<div class="abstract-card">
+<div class="section-heading"><h2>研究摘要</h2></div>
+<p>本專題以畢業滿一年、滿三年及滿五年之畢業生流向調查問卷為研究對象，整理不同學年度的問卷資料，透過資料轉換、資料清理、統計分析及視覺化技術，呈現畢業生在不同階段的就業情形與學習經驗。</p>
+<p>研究過程中，使用 R 語言進行資料處理與統計分析，探討工作職業類型、平均月收入、目前未就業原因、在學期間對目前工作有幫助的學習經驗，以及學校應加強的能力等相關主題。實際分析項目依各階段問卷內容與資料完整性調整。</p>
+<p>本專題結合 R Markdown 與 Shiny 建置互動式資料展示網站，整合統計圖表、資料表格及文字說明，提供使用者查閱不同調查階段與學年度的分析結果，協助學校了解畢業生流向，並作為課程規劃與教學改善的參考。</p>
+</div>
+</section>
+</div>
+</main><footer><div class="container footer-inner"><span>畢業生流向調查｜專題成果展示 · 靜宜大學資訊科學暨大數據分析與應用學系</span><span>版型參考：<a href="https://html5up.net/verti">HTML5 UP Verti</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span></div></footer><script>const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('#main-nav');toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));});</script></body></html>
