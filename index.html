@@ -1,45 +1,176 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head><meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>首頁｜畢業生流向調查</title>
-  <link rel="stylesheet" href="style.css"></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>首頁｜畢業生流向調查</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
+  <!-- 網站導覽列 -->
   <header class="site-header">
-    <div class="container header-inner"><a class="brand" href="index.html"><span class="brand-icon">🎓</span>畢業生流向調查</a><button class="menu-toggle" type="button" aria-label="開啟導覽選單" aria-controls="main-nav" aria-expanded="false">☰</button><nav class="nav" id="main-nav" aria-label="網站主選單"><a href="index.html" class="active" aria-current="page">首頁</a><div class="dropdown"><a href="research.html" >研究方法與動機 ▾</a><ul class="submenu"><li><a href="research.html#data">資料介紹</a></li><li><a href="research.html#method">研究方法</a></li><li><a href="research.html#motivation">研究動機</a></li></ul></div><div class="dropdown"><a href="results.html" >研究成果 ▾</a><ul class="submenu"><li><a href="results.html#one-year">畢業滿一年</a></li><li><a href="results.html#three-years">畢業滿三年</a></li><li><a href="results.html#five-years">畢業滿五年</a></li></ul></div><a href="conclusion.html" >結論</a></nav></div></header><main>
-<section aria-labelledby="page-title" class="hero">
-<div class="container hero-inner">
-<div class="eyebrow">GRADUATE DESTINATION SURVEY</div>
-<h1 id="page-title">畢業生流向調查<br/>專題成果展示</h1>
-<p>透過問卷資料分析與互動式視覺化，呈現畢業生的就業情形與學習經驗。</p>
-<span aria-hidden="true" class="accent-line"></span>
-</div>
-</section>
-<div class="container">
-<section aria-label="指導教授與專題組員" class="team-panel">
-<div class="team-item">
-<div aria-hidden="true" class="team-icon">♙</div>
-<div>
-<div class="team-label">指導教授</div>
-<div class="team-details"><strong>蔡瑾珮教授</strong><br/>靜宜大學 資料科學暨大數據分析與應用學系</div>
-</div>
-</div>
-<div class="team-item">
-<div aria-hidden="true" class="team-icon">♟</div>
-<div>
-<div class="team-label">專題組員</div>
-<div class="team-details">組長：<strong>林冠宇</strong><br/>組員：<strong>黃以丞 劉柏佑 吳妍葳</strong></div>
-</div>
-</div>
-</section>
-<section class="abstract-section" id="abstract">
-<div class="abstract-card">
-<div class="section-heading"><h2>研究摘要</h2></div>
-<p>本專題以畢業滿一年、滿三年及滿五年之畢業生就業流向問卷調查為研究對象，整理不同學年度的問卷資料，透過資料轉換、資料清理、統計分析及視覺化分析，呈現畢業生在不同階段的就業情形與學習經驗。</p>
-<p>研究過程中，使用 R 語言進行資料處理與統計分析，探討工作職業類型、平均月收入、目前未就業原因以及學校應加強的能力等相關主題。實際分析項目依各階段問卷內容與資料進行調整。</p>
-<p>本專題結合 R Markdown 與 Shiny 建置互動式分析平台，整合統計圖表、資料表格及文字說明，提供使用者查閱不同問題與學年度的分析結果，協助學校了解畢業生流向，並作為課程規劃與教學改善的參考。</p>
-</div>
-</section>
-</div>
-</main><footer><div class="container footer-inner"><span>畢業生流向調查｜專題成果展示 · 靜宜大學資料科學暨大數據分析與應用學系</span><span>版型參考：<a href="https://html5up.net/verti">HTML5 UP Verti</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span></div></footer>
-  <script src="script.js" defer></script></body></html>
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">🎓</span>
+        畢業生流向調查
+      </a>
+
+      <button class="menu-toggle"
+              type="button"
+              aria-label="開啟導覽選單"
+              aria-controls="main-nav"
+              aria-expanded="false">☰</button>
+
+      <nav class="nav" id="main-nav"
+           aria-label="網站主選單">
+        <a href="index.html"
+           class="active"
+           aria-current="page">首頁</a>
+
+        <div class="dropdown">
+          <a href="research.html">
+            研究方法與動機 ▾
+          </a>
+          <ul class="submenu">
+            <li>
+              <a href="research.html#motivation">
+                研究動機
+              </a>
+            </li>
+            <li>
+              <a href="research.html#method">
+                研究方法
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="data.html">資料介紹</a>
+
+        <div class="dropdown">
+          <a href="results.html">研究成果 ▾</a>
+          <ul class="submenu">
+            <li>
+              <a href="results.html#one-year">
+                畢業滿一年
+              </a>
+            </li>
+            <li>
+              <a href="results.html#three-years">
+                畢業滿三年
+              </a>
+            </li>
+            <li>
+              <a href="results.html#five-years">
+                畢業滿五年
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="conclusion.html">結論</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首頁封面 -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="eyebrow">
+          GRADUATE DESTINATION SURVEY
+        </div>
+        <h1>
+          畢業生流向調查<br>
+          專題成果展示
+        </h1>
+        <p>
+          透過問卷資料分析與互動式視覺化，
+          呈現畢業生的就業情形與學習經驗。
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- 專題團隊 -->
+      <section class="team-panel">
+        <div class="team-item">
+          <div class="team-title">指導教授</div>
+          <p>［請填寫教授姓名］教授</p>
+          <p>
+            靜宜大學資訊科學暨大數據分析與應用學系
+          </p>
+        </div>
+
+        <div class="team-item">
+          <div class="team-title">專題組員</div>
+          <p>組長：［請填寫姓名］</p>
+          <p>組員：［請填寫所有組員姓名］</p>
+        </div>
+      </section>
+
+      <!-- 研究摘要 -->
+      <section class="content-wrap" id="abstract">
+        <article class="content-card">
+          <h2>研究摘要</h2>
+
+          <p>
+            本專題以畢業滿一年、滿三年及滿五年之
+            畢業生流向調查問卷為研究對象，
+            整理不同學年度的問卷資料，
+            透過資料轉換、資料清理、統計分析
+            及視覺化技術，呈現畢業生在不同階段
+            的就業情形與學習經驗。
+          </p>
+
+          <p>
+            研究過程中，使用 R 語言進行資料處理
+            與統計分析，探討工作職業類型、
+            平均月收入、目前未就業原因、
+            在學期間對目前工作有幫助的學習經驗，
+            以及學校應加強的能力等相關主題。
+            實際分析項目依各階段問卷內容
+            與資料完整性調整。
+          </p>
+
+          <p>
+            本專題結合 R Markdown 與 Shiny
+            建置互動式資料展示網站，
+            整合統計圖表、資料表格及文字說明，
+            提供使用者查閱不同調查階段
+            與學年度的分析結果，
+            協助學校了解畢業生流向，
+            並作為課程規劃與教學改善的參考。
+          </p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    <div class="container footer-inner">
+      <span>
+        畢業生流向調查｜專題成果展示 ·
+        靜宜大學資訊科學暨大數據分析與應用學系
+      </span>
+      <span>
+        版型參考：
+        <a href="https://html5up.net/verti">
+          HTML5 UP Verti
+        </a>
+        ·
+        <a href="https://creativecommons.org/licenses/by/3.0/">
+          CC BY 3.0
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
