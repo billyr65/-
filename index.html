@@ -1,129 +1,230 @@
 
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
+
   <title>首頁｜畢業生流向調查</title>
+
+  <!-- 共用網頁樣式 -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- ========================= -->
   <!-- 網站導覽列 -->
+  <!-- ========================= -->
+
   <header class="site-header">
     <div class="container header-inner">
+
+      <!-- 網站名稱 -->
       <a class="brand" href="index.html">
         <span class="brand-icon">🎓</span>
         畢業生流向調查
       </a>
 
-      <button class="menu-toggle"
-              type="button"
-              aria-label="開啟導覽選單"
-              aria-controls="main-nav"
-              aria-expanded="false">☰</button>
+      <!-- 手機版選單按鈕 -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="開啟導覽選單"
+        aria-controls="main-nav"
+        aria-expanded="false">
+        ☰
+      </button>
 
-      <nav class="nav" id="main-nav"
+      <!-- 主選單 -->
+      <nav class="nav"
+           id="main-nav"
            aria-label="網站主選單">
+
+        <!-- 首頁 -->
         <a href="index.html"
            class="active"
-           aria-current="page">首頁</a>
+           aria-current="page">
+          首頁
+        </a>
 
+        <!-- 研究方法與動機 -->
         <div class="dropdown">
+
           <a href="research.html">
             研究方法與動機 ▾
           </a>
+
           <ul class="submenu">
+
             <li>
               <a href="research.html#motivation">
                 研究動機
               </a>
             </li>
+
             <li>
               <a href="research.html#method">
                 研究方法
               </a>
             </li>
+
           </ul>
         </div>
 
-        <a href="data.html">資料介紹</a>
+        <!-- 資料介紹 -->
+        <a href="data.html">
+          資料介紹
+        </a>
 
+        <!-- 研究成果 -->
         <div class="dropdown">
-          <a href="results.html">研究成果 ▾</a>
+
+          <a href="results.html">
+            研究成果 ▾
+          </a>
+
           <ul class="submenu">
+
             <li>
               <a href="results.html#one-year">
                 畢業滿一年
               </a>
             </li>
+
             <li>
               <a href="results.html#three-years">
                 畢業滿三年
               </a>
             </li>
+
             <li>
               <a href="results.html#five-years">
                 畢業滿五年
               </a>
             </li>
+
           </ul>
         </div>
 
-        <a href="conclusion.html">結論</a>
+        <!-- 結論 -->
+        <a href="conclusion.html">
+          結論
+        </a>
+
       </nav>
     </div>
   </header>
 
-  <!-- 首頁封面 -->
+
+  <!-- ========================= -->
+  <!-- 首頁主要內容 -->
+  <!-- ========================= -->
+
   <main>
-    <section class="hero">
+
+    <!-- 專題封面 -->
+    <section class="hero"
+             aria-labelledby="page-title">
+
       <div class="container hero-inner">
+
         <div class="eyebrow">
           GRADUATE DESTINATION SURVEY
         </div>
-        <h1>
+
+        <h1 id="page-title">
           畢業生流向調查<br>
           專題成果展示
         </h1>
+
         <p>
           透過問卷資料分析與互動式視覺化，
           呈現畢業生的就業情形與學習經驗。
         </p>
+
+        <span class="accent-line"
+              aria-hidden="true"></span>
+
       </div>
     </section>
 
+
     <div class="container">
-      <!-- 專題團隊 -->
-      <section class="team-panel">
-        <div class="team-item">
-          <div class="team-title">指導教授</div>
-          <p>蔡瑾珮教授</p>
-          <p>
-            靜宜大學資料科學暨大數據分析與應用學系
+
+      <!-- ========================= -->
+      <!-- 指導教授與專題組員 -->
+      <!-- ========================= -->
+
+      <section class="team-panel"
+               aria-label="指導教授與專題組員">
+
+        <!-- 左側：指導教授 -->
+        <div class="team-card">
+
+          <div class="team-badge">
+            指導教授
+          </div>
+
+          <h2 class="team-name">
+            蔡瑋珊 教授
+          </h2>
+
+          <p class="team-meta">
+            靜宜大學資訊科學暨大數據分析與應用學系
           </p>
+
         </div>
 
-        <div class="team-item">
-          <div class="team-title">專題組員</div>
-          <p>組長：林冠宇</p>
-          <p>組員：劉柏佑、黃以丞、吳妍葳</p>
+        <!-- 中間分隔線 -->
+        <div class="team-divider"
+             aria-hidden="true"></div>
+
+        <!-- 右側：專題組員 -->
+        <div class="team-card">
+
+          <div class="team-badge team-badge--members">
+            專題組員
+          </div>
+
+          <p class="team-role">
+            <strong>組長：</strong>
+            林冠宇
+          </p>
+
+          <p class="team-role">
+            <strong>組員：</strong>
+            劉柏佑、黃以丞、吳妍葳
+          </p>
+
         </div>
+
       </section>
 
+
+      <!-- ========================= -->
       <!-- 研究摘要 -->
-      <section class="content-wrap" id="abstract">
-        <article class="content-card">
-          <h2>研究摘要</h2>
+      <!-- ========================= -->
+
+      <section class="abstract-section"
+               id="abstract">
+
+        <div class="abstract-card">
+
+          <div class="section-heading">
+            <h2>研究摘要</h2>
+          </div>
 
           <p>
             本專題以畢業滿一年、滿三年及滿五年之
-            畢業生就業流向調查為研究對象，
+            畢業生流向調查問卷為研究對象，
             整理不同學年度的問卷資料，
-            透過資料轉換、資料清理、統計分析
-            及視覺化技術，呈現畢業生在不同階段
-            的就業情形與學習經驗。
+            透過資料轉換、資料清理、
+            統計分析及視覺化技術，
+            呈現畢業生在不同階段的
+            就業情形與學習經驗。
           </p>
 
           <p>
@@ -145,18 +246,29 @@
             協助學校了解畢業生流向，
             並作為課程規劃與教學改善的參考。
           </p>
-        </article>
+
+        </div>
+
       </section>
+
     </div>
+
   </main>
 
-  <!-- 頁尾 -->
+
+  <!-- ========================= -->
+  <!-- 網站頁尾 -->
+  <!-- ========================= -->
+
   <footer>
+
     <div class="container footer-inner">
+
       <span>
         畢業生流向調查｜專題成果展示 ·
-        靜宜大學資料科學暨大數據分析與應用學系
+        靜宜大學資訊科學暨大數據分析與應用學系
       </span>
+
       <span>
         版型參考：
         <a href="https://html5up.net/verti">
@@ -167,10 +279,16 @@
           CC BY 3.0
         </a>
       </span>
+
     </div>
+
   </footer>
 
+
+  <!-- 共用 JavaScript -->
   <script src="script.js" defer></script>
+
 </body>
 </html>
+
 
