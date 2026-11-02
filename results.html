@@ -49,7 +49,7 @@
           首頁
         </a>
 
-        <!-- 研究方法與動機 -->
+        <!-- 研究動機與方法 -->
         <div class="dropdown">
 
           <a href="research.html">
@@ -73,34 +73,43 @@
           </ul>
         </div>
 
+        <!-- 資料介紹 -->
         <a href="data.html">
           資料介紹
         </a>
 
-        <!-- 研究成果 -->
+        <!-- ================================== -->
+        <!-- 研究成果下拉選單：已修改跳轉連結 -->
+        <!-- ================================== -->
+
         <div class="dropdown">
 
-          <a href="results.html">
+          <a
+            href="results.html"
+            class="active"
+            aria-current="page">
             研究成果 ▾
           </a>
 
           <ul class="submenu">
+
             <li>
-              <a href="results.html#one-year">
+              <a href="results.html#rmarkdown">
                 R Markdown
               </a>
             </li>
 
             <li>
-              <a href="results.html#three-years">
+              <a href="results.html#rshiny">
                 R Shiny
               </a>
             </li>
+
           </ul>
 
         </div>
 
-
+        <!-- 結論 -->
         <a href="conclusion.html">
           結論
         </a>
@@ -141,17 +150,17 @@
       class="results-intro"
       aria-labelledby="results-intro-title">
 
-
-
       <h2 id="results-intro-title">
         從問卷資料到視覺化成果
       </h2>
 
       <p>
         本專題將畢業生流向調查資料整理為
-        清楚，且容易理解的統計報表，
-        並透過互動式網站提供不同學年度分類之間的比較及指標的查詢。
-        下方展示 R Markdown 與 R Shiny兩項成果。
+        清楚且容易理解的統計報表，
+        並透過互動式網站提供不同學年度
+        分類之間的比較及指標的查詢。
+        下方展示 R Markdown 與 R Shiny
+        兩項成果。
       </p>
 
       <!-- 成果快速導覽 -->
@@ -339,7 +348,7 @@
           title="畢業生流向調查 R Shiny 互動式分析網站"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
-          allow="fullscreen">
+          allowfullscreen>
         </iframe>
 
         <figcaption>
@@ -392,3 +401,4 @@
 
 </body>
 </html>
+
