@@ -221,7 +221,7 @@ h1 {
   padding: 34px clamp(24px, 4vw, 46px);
   border-radius: 24px;
   background: #fff;
-  box-shadow: 0 16px 40px rgba(23, 45, 78, .10);
+  box-shadow: 0 16px 40px rgba(23,45,78,.10);
 }
 
 .team-card {
@@ -335,7 +335,7 @@ h1 {
 
 
 /* =========================================
-   6. 其他網頁的頁面標題
+   6. 其他頁面標題與內容
 ========================================= */
 
 .page-top {
@@ -357,11 +357,6 @@ h1 {
   margin: 0;
   color: #e0eafa;
 }
-
-
-/* =========================================
-   7. 各頁面內容卡片
-========================================= */
 
 .content-wrap {
   padding: 38px 0 80px;
@@ -444,8 +439,7 @@ h1 {
 
 
 /* =========================================
-   8. 原本的五步驟研究流程圖
-   保留相容舊版 research.html
+   7. 舊版研究流程圖相容樣式
 ========================================= */
 
 .research-flow {
@@ -459,11 +453,7 @@ h1 {
 
 .flow-step {
   width: 100%;
-  background: linear-gradient(
-    110deg,
-    #f1f6ff,
-    #fff
-  );
+  background: linear-gradient(110deg,#f1f6ff,#fff);
   border: 1px solid #dce7f8;
   border-left: 6px solid #4576bf;
   border-radius: 13px;
@@ -472,7 +462,7 @@ h1 {
   grid-template-columns: 44px 1fr;
   column-gap: 14px;
   align-items: center;
-  box-shadow: 0 5px 15px rgba(23, 55, 95, .05);
+  box-shadow: 0 5px 15px rgba(23,55,95,.05);
 }
 
 .step-no {
@@ -508,11 +498,7 @@ h1 {
 
 .final-step {
   border-left-color: #f2678d;
-  background: linear-gradient(
-    110deg,
-    #fff1f6,
-    #fff
-  );
+  background: linear-gradient(110deg,#fff1f6,#fff);
 }
 
 .final-step .step-no {
@@ -522,15 +508,14 @@ h1 {
 
 
 /* =========================================
-   9. 新版研究方法頁面
-   段落式研究動機與研究方法
+   8. 新版研究方法與動機
 ========================================= */
 
 .research-feature {
   scroll-margin-top: 100px;
   background: #fff;
   border-radius: 22px;
-  padding: clamp(26px, 4vw, 54px);
+  padding: clamp(26px,4vw,54px);
   margin: 0 0 28px;
   box-shadow: var(--shadow);
 }
@@ -544,7 +529,7 @@ h1 {
 }
 
 .research-feature h2 {
-  font-size: clamp(27px, 3vw, 38px);
+  font-size: clamp(27px,3vw,38px);
   margin: 0;
   color: var(--navy);
   letter-spacing: .04em;
@@ -576,7 +561,7 @@ h1 {
 
 
 /* =========================================
-   10. 新版研究流程時間軸
+   9. 新版研究流程時間軸
 ========================================= */
 
 .process-timeline {
@@ -602,7 +587,7 @@ h1 {
 .process-timeline li {
   position: relative;
   display: grid;
-  grid-template-columns: 56px minmax(0, 1fr);
+  grid-template-columns: 56px minmax(0,1fr);
   gap: 24px;
   padding: 0 0 24px;
   align-items: start;
@@ -655,7 +640,287 @@ h1 {
 
 
 /* =========================================
-   11. 網站頁尾
+   10. 研究成果雙作品展示頁
+========================================= */
+
+.results-showcase {
+  padding-top: 38px;
+}
+
+.results-intro,
+.results-stages {
+  background: #fff;
+  border-radius: 22px;
+  padding: clamp(25px,4vw,45px);
+  margin-bottom: 26px;
+  box-shadow: var(--shadow);
+  scroll-margin-top: 105px;
+}
+
+.results-intro h2,
+.results-stages h2 {
+  margin: 5px 0 12px;
+  color: var(--navy);
+  font-size: clamp(25px,3vw,34px);
+  line-height: 1.4;
+}
+
+.results-intro p,
+.results-stages > p {
+  margin: 0;
+  color: #50617b;
+  font-size: 16px;
+  line-height: 1.95;
+  max-width: 850px;
+}
+
+.results-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.results-quicklinks a {
+  border: 1px solid #d8e5f5;
+  background: #f2f7ff;
+  color: #285a96;
+  font-weight: 700;
+  padding: 9px 17px;
+  border-radius: 999px;
+}
+
+.results-quicklinks a:hover {
+  background: #dfeafa;
+}
+
+
+/* =========================================
+   11. R Markdown / R Shiny 展示卡片
+========================================= */
+
+.showcase-panel {
+  scroll-margin-top: 105px;
+  display: grid;
+  grid-template-columns:
+    minmax(0,0.95fr) minmax(0,1.1fr);
+  gap: clamp(20px,3vw,38px);
+  align-items: center;
+  background: #fff;
+  border-radius: 22px;
+  padding: clamp(24px,3.5vw,43px);
+  margin-bottom: 26px;
+  box-shadow: var(--shadow);
+}
+
+.showcase-panel:nth-of-type(3) {
+  border-top: 4px solid #f2678d;
+}
+
+.showcase-tag {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 5px 13px;
+  background: #eaf2ff;
+  color: #2c5d9e;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: .03em;
+}
+
+.showcase-tag--pink {
+  background: #fff0f5;
+  color: #b43d68;
+}
+
+.showcase-copy h2 {
+  font-size: clamp(28px,3vw,38px);
+  line-height: 1.3;
+  margin: 14px 0;
+  color: var(--navy);
+}
+
+.showcase-copy p {
+  margin: 0 0 16px;
+  color: #536780;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.showcase-copy .showcase-lead {
+  color: #273d5e;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.showcase-link-area {
+  margin-top: 20px;
+  padding: 15px 18px;
+  border-radius: 12px;
+  background: #f5f8fd;
+  border: 1px solid #e3eaf5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 15px;
+  align-items: center;
+}
+
+.link-label {
+  font-size: 13px;
+  font-weight: 800;
+  color: #315b92;
+  white-space: nowrap;
+}
+
+.pending-link {
+  font-size: 14px;
+  color: #77869d;
+}
+
+.showcase-external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--navy);
+  color: white;
+  padding: 9px 16px;
+  border-radius: 9px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.showcase-external-link:hover {
+  background: #315e99;
+}
+
+
+/* =========================================
+   12. 截圖展示
+========================================= */
+
+.showcase-figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.showcase-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid #e1e7f1;
+  border-radius: 13px;
+  box-shadow: 0 12px 26px #182f4d16;
+}
+
+.screenshot-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(
+    150deg,
+    #eef3fc,
+    #dfe9f7
+  );
+  border: 2px dashed #b7cbe3;
+  border-radius: 13px;
+  color: #476184;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 7px;
+  padding: 18px;
+}
+
+.screenshot-placeholder .placeholder-icon {
+  font-size: 45px;
+  line-height: 1;
+  color: #7392bd;
+}
+
+.screenshot-placeholder strong {
+  font-size: 19px;
+  color: #254d7f;
+}
+
+.screenshot-placeholder small {
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 290px;
+}
+
+.showcase-figure figcaption {
+  font-size: 13px;
+  color: #7a88a0;
+  margin-top: 12px;
+  text-align: center;
+}
+
+
+/* =========================================
+   13. 舊版階段卡片相容樣式
+========================================= */
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.stage-card {
+  scroll-margin-top: 105px;
+  border: 1px solid #e0e9f6;
+  border-radius: 14px;
+  background: #f8faff;
+  padding: 21px 20px;
+}
+
+.stage-card span {
+  color: #e26b92;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.stage-card h3 {
+  font-size: 18px;
+  color: #203d61;
+  margin: 6px 0;
+}
+
+.stage-card p {
+  font-size: 14px;
+  color: #61728c;
+  line-height: 1.75;
+  margin: 0;
+}
+
+
+/* =========================================
+   14. R Shiny 網站內嵌預覽
+========================================= */
+
+.showcase-panel:has(.shiny-embed) {
+  grid-template-columns:
+    minmax(0,0.7fr) minmax(0,1.5fr);
+  align-items: start;
+}
+
+.shiny-embed {
+  display: block;
+  width: 100%;
+  height: 620px;
+  border: 1px solid #dce5f2;
+  border-radius: 14px;
+  background: #fff;
+}
+
+
+/* =========================================
+   15. 網站頁尾
 ========================================= */
 
 footer {
@@ -678,7 +943,7 @@ footer a {
 
 
 /* =========================================
-   12. 平板版響應式排版
+   16. 平板響應式排版
 ========================================= */
 
 @media (max-width: 900px) {
@@ -727,9 +992,8 @@ footer a {
     color: #fff;
   }
 
-  /* 教授與組員卡片改為上下排列 */
   .team-panel {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0,1fr);
     gap: 18px;
     padding: 28px 24px;
   }
@@ -748,7 +1012,31 @@ footer a {
 
 
 /* =========================================
-   13. 手機版響應式排版
+   17. 研究成果平板版
+========================================= */
+
+@media (max-width: 800px) {
+
+  .showcase-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-panel:has(.shiny-embed) {
+    grid-template-columns: 1fr;
+  }
+
+  .shiny-embed {
+    height: 540px;
+  }
+
+  .stage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================
+   18. 手機響應式排版
 ========================================= */
 
 @media (max-width: 600px) {
@@ -767,7 +1055,7 @@ footer a {
 
   .process-timeline li {
     grid-template-columns:
-      44px minmax(0, 1fr);
+      44px minmax(0,1fr);
     gap: 10px;
   }
 
@@ -793,7 +1081,7 @@ footer a {
 @media (max-width: 560px) {
 
   .container {
-    width: min(100% - 26px, 1160px);
+    width: min(100% - 26px,1160px);
   }
 
   .hero {
@@ -834,7 +1122,6 @@ footer a {
     padding: 23px 20px;
   }
 
-  /* 舊版研究流程圖 */
   .flow-step {
     padding: 12px 11px;
     grid-template-columns: 34px 1fr;
@@ -854,5 +1141,19 @@ footer a {
   .flow-step small {
     font-size: 12px;
   }
-}
 
+  .showcase-panel,
+  .results-intro,
+  .results-stages {
+    border-radius: 16px;
+    padding: 22px 19px;
+  }
+
+  .screenshot-placeholder {
+    aspect-ratio: 4 / 3;
+  }
+
+  .shiny-embed {
+    height: 500px;
+  }
+}
