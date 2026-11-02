@@ -1,223 +1,385 @@
 
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
   <title>研究成果｜畢業生流向調查</title>
+
+  <!-- 共用 CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- 導覽列 -->
+
+  <!-- ================================== -->
+  <!-- 網站導覽列 -->
+  <!-- ================================== -->
+
   <header class="site-header">
     <div class="container header-inner">
+
       <a class="brand" href="index.html">
         <span class="brand-icon">🎓</span>
         畢業生流向調查
       </a>
 
-      <button class="menu-toggle"
-              type="button"
-              aria-label="開啟導覽選單"
-              aria-controls="main-nav"
-              aria-expanded="false">☰</button>
+      <!-- 手機版選單 -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="開啟導覽選單"
+        aria-controls="main-nav"
+        aria-expanded="false">
+        ☰
+      </button>
 
-      <nav class="nav" id="main-nav"
-           aria-label="網站主選單">
-        <a href="index.html">首頁</a>
+      <nav
+        class="nav"
+        id="main-nav"
+        aria-label="網站主選單">
 
+        <a href="index.html">
+          首頁
+        </a>
+
+        <!-- 研究方法與動機 -->
         <div class="dropdown">
+
           <a href="research.html">
             研究動機與方法 ▾
           </a>
+
           <ul class="submenu">
+
             <li>
               <a href="research.html#motivation">
                 研究動機
               </a>
             </li>
+
             <li>
               <a href="research.html#method">
                 研究方法
               </a>
             </li>
+
           </ul>
         </div>
 
-        <a href="data.html">資料介紹</a>
+        <a href="data.html">
+          資料介紹
+        </a>
 
-        <div class="dropdown">
-          <a href="results.html"
-             class="active"
-             aria-current="page">
-            研究成果 ▾
-          </a>
-          <ul class="submenu">
-            <li>
-              <a href="results.html#one-year">
-                R Markdown
-              </a>
-            </li>
-            <li>
-              <a href="results.html#three-years">
-                R Shiny
-              </a>
-            </li>
-          </ul>
-        </div>
+        <!-- 研究成果 -->
+        <a
+          href="results.html"
+          class="active"
+          aria-current="page">
+          研究成果
+        </a>
 
-        <a href="conclusion.html">結論</a>
+        <a href="conclusion.html">
+          結論
+        </a>
+
       </nav>
     </div>
   </header>
 
+
+  <!-- ================================== -->
   <!-- 頁面標題 -->
+  <!-- ================================== -->
+
   <section class="page-top">
+
     <div class="container">
+
       <h1>研究成果</h1>
+
       <p>
-        分別查看畢業滿一年、滿三年、
-        滿五年的各學年度問卷分析。
+        以統計報表與互動式網站，
+        呈現畢業生流向調查的分析成果。
       </p>
+
     </div>
   </section>
 
-  <main class="container content-wrap">
 
-    <!-- 快速導覽 -->
-    <div class="subnav">
-      <a href="#one-year">畢業滿一年</a>
-      <a href="#three-years">畢業滿三年</a>
-      <a href="#five-years">畢業滿五年</a>
-    </div>
+  <!-- ================================== -->
+  <!-- 研究成果主要內容 -->
+  <!-- ================================== -->
 
-    <!-- 畢業滿一年 -->
-    <section class="content-card" id="one-year">
-      <h2>畢業滿一年問卷分析</h2>
+  <main
+    class="container content-wrap results-showcase">
+
+    <!-- 成果介紹 -->
+    <section
+      class="results-intro"
+      aria-labelledby="results-intro-title">
+
+      <div class="research-kicker">
+        PROJECT OUTPUTS
+      </div>
+
+      <h2 id="results-intro-title">
+        從問卷資料到視覺化成果
+      </h2>
 
       <p>
-        本區預留該調查階段不同學年度的
-        統計結果。正式發布前，
-        請依實際問卷欄位與可用年度
-        更新分析項目。
+        本專題將畢業生流向調查資料整理為
+        清楚易讀的統計報表，
+        並透過互動式網站提供不同學年度、
+        分類及指標的查詢。
+
+        下方展示 R Markdown 與 R Shiny
+        兩項成果，R Shiny 互動式網站
+        已附上線上展示入口，
+        R Markdown 報表待補上正式連結與截圖。
       </p>
 
-      <div class="placeholder">
-        畢業滿一年｜
-        學年度與有效樣本數：待填寫
-        <br>
-        統計圖表／分析系統入口：待加入
-      </div>
+      <!-- 成果快速導覽 -->
+      <nav
+        class="results-quicklinks"
+        aria-label="研究成果快速導覽">
 
-      <h3>分析指標</h3>
-      <div class="chips">
-        <span class="chip">工作職業類型</span>
-        <span class="chip">平均月收入</span>
-        <span class="chip">目前未就業原因</span>
-        <span class="chip">
-          在學期間對目前工作有幫助的學習經驗
-        </span>
-        <span class="chip">學校應加強的能力</span>
-      </div>
+        <a href="#rmarkdown">
+          R Markdown 報表
+        </a>
 
-      <p class="muted">
-        上列為預計展示的分析主題，
-        實際以各階段問卷可用題項為準。
-      </p>
+        <a href="#rshiny">
+          R Shiny 互動網站
+        </a>
+
+      </nav>
+
     </section>
 
-    <!-- 畢業滿三年 -->
-    <section class="content-card" id="three-years">
-      <h2>畢業滿三年問卷分析</h2>
 
-      <p>
-        本區預留該調查階段不同學年度的
-        統計結果。正式發布前，
-        請依實際問卷欄位與可用年度
-        更新分析項目。
-      </p>
+    <!-- ================================== -->
+    <!-- 第一部分：R Markdown -->
+    <!-- ================================== -->
 
-      <div class="placeholder">
-        畢業滿三年｜
-        學年度與有效樣本數：待填寫
-        <br>
-        統計圖表／分析系統入口：待加入
-      </div>
+    <section
+      class="showcase-panel"
+      id="rmarkdown"
+      aria-labelledby="rmd-title">
 
-      <h3>分析指標</h3>
-      <div class="chips">
-        <span class="chip">工作職業類型</span>
-        <span class="chip">平均月收入</span>
-        <span class="chip">目前未就業原因</span>
-        <span class="chip">
-          在學期間對目前工作有幫助的學習經驗
+      <!-- 左側文字介紹 -->
+      <div class="showcase-copy">
+
+        <span class="showcase-tag">
+          01 · 統計分析報表
         </span>
-        <span class="chip">學校應加強的能力</span>
+
+        <h2 id="rmd-title">
+          R Markdown
+        </h2>
+
+        <p class="showcase-lead">
+          將統計圖表、資料表與文字說明
+          整合成完整報表，
+          讓讀者依照學年度及調查主題，
+          逐步了解畢業生的就業與學習情形。
+        </p>
+
+        <p>
+          報表主要呈現樣本概況、
+          目前工作狀況、職業類型、
+          平均月收入、未就業原因，
+          以及學習經驗與應加強能力等分析結果；
+          各項內容依實際問卷題目調整。
+        </p>
+
+        <!-- R Markdown 網站連結 -->
+        <div class="showcase-link-area">
+
+          <span class="link-label">
+            報表連結
+          </span>
+
+          <span class="pending-link">
+            尚未提供網址，
+            請填入正式報表連結
+          </span>
+
+        </div>
+
       </div>
 
-      <p class="muted">
-        上列為預計展示的分析主題，
-        實際以各階段問卷可用題項為準。
-      </p>
+
+      <!-- 右側 R Markdown 截圖 -->
+      <figure class="showcase-figure">
+
+        <!--
+          後續將真實截圖儲存成：
+
+          images/rmarkdown-report.png
+
+          並把下方 img 註解取消，
+          再刪除 screenshot-placeholder 區塊。
+        -->
+
+        <!--
+        <img
+          src="images/rmarkdown-report.png"
+          alt="R Markdown 統計分析報表截圖"
+          loading="lazy"
+        >
+        -->
+
+        <div
+          class="screenshot-placeholder"
+          role="img"
+          aria-label="預留 R Markdown 真實報表截圖">
+
+          <span class="placeholder-icon">
+            ▤
+          </span>
+
+          <strong>
+            R Markdown 報表截圖
+          </strong>
+
+          <small>
+            請放入自己的 HTML 報表首頁、
+            圖表或統計表截圖
+          </small>
+
+        </div>
+
+        <figcaption>
+          圖 1｜R Markdown 統計報表
+          （截圖待補）
+        </figcaption>
+
+      </figure>
+
     </section>
 
-    <!-- 畢業滿五年 -->
-    <section class="content-card" id="five-years">
-      <h2>畢業滿五年問卷分析</h2>
 
-      <p>
-        本區預留該調查階段不同學年度的
-        統計結果。正式發布前，
-        請依實際問卷欄位與可用年度
-        更新分析項目。
-      </p>
+    <!-- ================================== -->
+    <!-- 第二部分：R Shiny -->
+    <!-- ================================== -->
 
-      <div class="placeholder">
-        畢業滿五年｜
-        學年度與有效樣本數：待填寫
-        <br>
-        統計圖表／分析系統入口：待加入
-      </div>
+    <section
+      class="showcase-panel"
+      id="rshiny"
+      aria-labelledby="shiny-title">
 
-      <h3>分析指標</h3>
-      <div class="chips">
-        <span class="chip">工作職業類型</span>
-        <span class="chip">平均月收入</span>
-        <span class="chip">目前未就業原因</span>
-        <span class="chip">
-          在學期間對目前工作有幫助的學習經驗
+      <!-- 左側文字介紹 -->
+      <div class="showcase-copy">
+
+        <span
+          class="showcase-tag showcase-tag--pink">
+          02 · 互動式分析網站
         </span>
-        <span class="chip">學校應加強的能力</span>
+
+        <h2 id="shiny-title">
+          R Shiny
+        </h2>
+
+        <p class="showcase-lead">
+          將統計結果轉為可操作的互動介面，
+          讓使用者自行選擇比較群組與分析指標，
+          更直觀地觀察不同資料之間的差異。
+        </p>
+
+        <p>
+          網站以「自訂比較分析」與「詳細資料」
+          為主要功能，
+          可依資料提供的學年度、學院、
+          系所或其他分類進行瀏覽，
+          並搭配統計圖表與文字說明協助理解。
+        </p>
+
+        <!-- R Shiny 網站連結 -->
+        <div class="showcase-link-area">
+
+          <span class="link-label">
+            網站連結
+          </span>
+
+          <a
+            class="showcase-external-link"
+            href="https://project4.shinyapps.io/GraduateShiny/"
+            target="_blank"
+            rel="noopener noreferrer">
+            開啟完整 R Shiny 網站 ↗
+          </a>
+
+        </div>
+
       </div>
 
-      <p class="muted">
-        上列為預計展示的分析主題，
-        實際以各階段問卷可用題項為準。
-      </p>
+
+      <!-- 右側嵌入 R Shiny 網站 -->
+      <figure
+        class="showcase-figure showcase-live">
+
+        <iframe
+          class="shiny-embed"
+          src="https://project4.shinyapps.io/GraduateShiny/"
+          title="畢業生流向調查 R Shiny 互動式分析網站"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="fullscreen">
+        </iframe>
+
+        <figcaption>
+          R Shiny 線上互動網站：
+          如預覽無法顯示，
+          請點擊左側
+          「開啟完整 R Shiny 網站」。
+        </figcaption>
+
+      </figure>
+
     </section>
+
   </main>
 
-  <!-- 頁尾 -->
+
+  <!-- ================================== -->
+  <!-- 網站頁尾 -->
+  <!-- ================================== -->
+
   <footer>
+
     <div class="container footer-inner">
+
       <span>
         畢業生流向調查｜專題成果展示 ·
         靜宜大學資料科學暨大數據分析與應用學系
       </span>
+
       <span>
         版型參考：
         <a href="https://html5up.net/verti">
           HTML5 UP Verti
-        </a> ·
+        </a>
+
+        ·
+
         <a href="https://creativecommons.org/licenses/by/3.0/">
           CC BY 3.0
         </a>
       </span>
+
     </div>
+
   </footer>
 
+
+  <!-- 共用 JavaScript -->
   <script src="script.js" defer></script>
+
 </body>
 </html>
