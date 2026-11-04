@@ -2,134 +2,206 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 
+<head>
+  <meta charset="utf-8">
 
-<header class="site-header">
-  <div class="container header-inner">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
-    <!-- 網站 Logo -->
-    <a
-      class="brand brand-image"
-      href="index.html"
-      aria-label="畢業生流向調查首頁">
+  <meta
+    name="description"
+    content="畢業生就業流向調查與趨勢分析專題成果展示，透過 R、R Markdown 及 R Shiny 呈現畢業生就業情形與學習經驗。"
+  >
 
-      <img
-        src="images/logo.png"
-        alt="畢業生流向調查"
-        width="306"
-        height="55">
-    </a>
+  <title>
+    首頁｜畢業生就業流向調查與趨勢分析
+  </title>
 
-    <!-- 手機版選單 -->
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-label="開啟導覽選單"
-      aria-controls="main-nav"
-      aria-expanded="false">
-      ☰
-    </button>
+  <!-- 共用 CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- 網站導覽 -->
-    <nav
-      class="nav"
-      id="main-nav"
-      aria-label="網站主選單">
+</head>
 
-      <a href="index.html">首頁</a>
+<body>
 
-      <!-- 研究動機與方法 -->
-      <div class="dropdown">
-        <a href="research.html">
-          研究動機與方法 ▾
+  <!-- ================================== -->
+  <!-- 網站導覽列 -->
+  <!-- ================================== -->
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <!-- 網站 Logo -->
+      <a
+        class="brand brand-image"
+        href="index.html"
+        aria-label="畢業生流向調查首頁"
+      >
+
+        <img
+          src="images/logo.png"
+          alt="畢業生流向調查"
+          width="306"
+          height="55"
+        >
+
+      </a>
+
+      <!-- 手機版選單 -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="開啟導覽選單"
+        aria-controls="main-nav"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <!-- 主導覽選單 -->
+      <nav
+        class="nav"
+        id="main-nav"
+        aria-label="網站主選單"
+      >
+
+        <!-- 首頁 -->
+        <a
+          href="index.html"
+          class="active"
+          aria-current="page"
+        >
+          首頁
         </a>
 
-        <ul class="submenu">
-          <li>
-            <a href="research.html#motivation">
-              研究動機
-            </a>
-          </li>
+        <!-- 研究動機與方法 -->
+        <div class="dropdown">
 
-          <li>
-            <a href="research.html#method">
-              研究方法
-            </a>
-          </li>
-        </ul>
-      </div>
+          <a href="research.html">
+            研究動機與方法 ▾
+          </a>
 
-      <a href="data.html">資料介紹</a>
+          <ul class="submenu">
 
-      <!-- 研究成果 -->
-      <div class="dropdown">
-        <a href="results.html">
-          研究成果 ▾
+            <li>
+              <a href="research.html#motivation">
+                研究動機
+              </a>
+            </li>
+
+            <li>
+              <a href="research.html#method">
+                研究方法
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- 資料介紹 -->
+        <a href="data.html">
+          資料介紹
         </a>
 
-        <ul class="submenu">
-          <li>
-            <a href="results.html#rmarkdown">
-              R Markdown
-            </a>
-          </li>
+        <!-- 研究成果 -->
+        <div class="dropdown">
 
-          <li>
-            <a href="results.html#rshiny">
-              R Shiny
-            </a>
-          </li>
-        </ul>
-      </div>
+          <a href="results.html">
+            研究成果 ▾
+          </a>
 
-      <a href="conclusion.html">結論</a>
+          <ul class="submenu">
 
-    </nav>
-  </div>
-</header>
+            <li>
+              <a href="results.html#rmarkdown">
+                R Markdown
+              </a>
+            </li>
+
+            <li>
+              <a href="results.html#rshiny">
+                R Shiny
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- 結論 -->
+        <a href="conclusion.html">
+          結論
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
 
 
-
-  <!-- ========================= -->
+  <!-- ================================== -->
   <!-- 首頁主要內容 -->
-  <!-- ========================= -->
+  <!-- ================================== -->
 
   <main>
 
-    <!-- 專題封面 -->
-    <section class="hero"
-             aria-labelledby="page-title">
+    <!-- ================================== -->
+    <!-- 首頁專題封面 -->
+    <!-- ================================== -->
+
+    <section
+      class="hero"
+      aria-labelledby="page-title"
+    >
 
       <div class="container hero-inner">
 
+        <!-- 英文副標題 -->
         <div class="eyebrow">
           Graduate Employment Survey
         </div>
 
+        <!-- 專題名稱 -->
         <h1 id="page-title">
-          畢業生就業流向調查與趨勢分析<br>
+          畢業生就業流向調查與趨勢分析
+          <br>
           專題成果展示
         </h1>
 
+        <!-- 專題簡介 -->
         <p>
-          透過問卷資料分析與互動式視覺化分析，
-          呈現畢業生的就業情形與學習經驗是否有幫助。
+          透過問卷資料分析與互動式視覺化，
+          呈現畢業生的就業情形，
+          並探討在學期間的學習經驗
+          對畢業後就業的幫助。
         </p>
 
-        <span class="accent-line"
-              aria-hidden="true"></span>
+        <!-- 粉紅色裝飾線 -->
+        <span
+          class="accent-line"
+          aria-hidden="true"
+        ></span>
 
       </div>
+
     </section>
 
 
     <div class="container">
 
-      <!-- ========================= -->
+      <!-- ================================== -->
       <!-- 指導教授與專題組員 -->
-      <!-- ========================= -->
+      <!-- ================================== -->
 
-      <section class="team-panel"
-               aria-label="指導教授與專題組員">
+      <section
+        class="team-panel"
+        aria-label="指導教授與專題組員"
+      >
 
         <!-- 左側：指導教授 -->
         <div class="team-card">
@@ -148,9 +220,13 @@
 
         </div>
 
+
         <!-- 中間分隔線 -->
-        <div class="team-divider"
-             aria-hidden="true"></div>
+        <div
+          class="team-divider"
+          aria-hidden="true"
+        ></div>
+
 
         <!-- 右側：專題組員 -->
         <div class="team-card">
@@ -174,19 +250,29 @@
       </section>
 
 
-      <!-- ========================= -->
+      <!-- ================================== -->
       <!-- 研究摘要 -->
-      <!-- ========================= -->
+      <!-- ================================== -->
 
-      <section class="abstract-section"
-               id="abstract">
+      <section
+        class="abstract-section"
+        id="abstract"
+        aria-labelledby="abstract-title"
+      >
 
         <div class="abstract-card">
 
+          <!-- 區塊標題 -->
           <div class="section-heading">
-            <h2>研究摘要</h2>
+
+            <h2 id="abstract-title">
+              研究摘要
+            </h2>
+
           </div>
 
+
+          <!-- 第一段 -->
           <p>
             本專題以畢業滿一年、滿三年及滿五年之
             畢業生流向調查問卷為研究對象，
@@ -197,24 +283,32 @@
             就業情形與學習經驗。
           </p>
 
+
+          <!-- 第二段 -->
           <p>
-            研究過程中，使用 R 語言進行資料處理
-            與統計分析，探討工作職業類型、
-            平均月收入、目前未就業原因、
+            研究過程中，使用 R 語言進行
+            資料處理與統計分析，
+            探討工作職業類型、平均月收入、
+            目前未就業原因、
             在學期間對目前工作有幫助的學習經驗，
             以及學校應加強的能力等相關主題。
             實際分析項目依各階段問卷內容
             與資料完整性調整。
           </p>
 
+
+          <!-- 第三段 -->
           <p>
-            本專題結合 R Markdown 與 Shiny
-            建置互動式資料展示網站，
-            整合統計圖表、資料表格及文字說明，
-            提供使用者查閱不同調查階段
-            與學年度的分析結果，
-            協助學校了解畢業生流向，
-            並作為課程規劃與教學改善的參考。
+            本專題使用 R Markdown
+            製作統計分析報表，
+            整合統計圖表、資料表格及文字說明；
+            同時透過 R Shiny
+            建置互動式資料分析網站，
+            提供不同學年度、學院及系所的
+            資料查詢與自訂比較功能，
+            讓使用者更容易理解畢業生流向
+            與各項調查結果，
+            並作為學校課程規劃及教學改善的參考。
           </p>
 
         </div>
@@ -226,9 +320,9 @@
   </main>
 
 
-  <!-- ========================= -->
+  <!-- ================================== -->
   <!-- 網站頁尾 -->
-  <!-- ========================= -->
+  <!-- ================================== -->
 
   <footer>
 
@@ -241,13 +335,24 @@
 
       <span>
         版型參考：
-        <a href="https://html5up.net/verti">
+        <a
+          href="https://html5up.net/verti"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           HTML5 UP Verti
         </a>
+
         ·
-        <a href="https://creativecommons.org/licenses/by/3.0/">
+
+        <a
+          href="https://creativecommons.org/licenses/by/3.0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           CC BY 3.0
         </a>
+
       </span>
 
     </div>
@@ -255,10 +360,12 @@
   </footer>
 
 
+  <!-- ================================== -->
   <!-- 共用 JavaScript -->
+  <!-- ================================== -->
+
   <script src="script.js" defer></script>
 
 </body>
 </html>
-
 
