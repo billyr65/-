@@ -13,80 +13,89 @@
 
   <!-- 共用網站導覽列 -->
   <header class="site-header">
-    <div class="container header-inner">
+  <div class="container header-inner">
 
-      <a class="brand brand-image"
-         href="index.html"
-         aria-label="畢業生流向調查首頁">
-        <img
-          src="images/logo.png"
-          alt="畢業生流向調查"
-          width="306"
-          height="55">
-      </a>
+   <a class="brand brand-image"
+   href="index.html"
+   aria-label="畢業生流向調查首頁">
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="開啟導覽選單"
-        aria-controls="main-nav"
-        aria-expanded="false">
-        ☰
-      </button>
+  <img
+    class="brand-logo"
+    src="images/logo.png"
+    alt="資料科學系徽"
+    width="52"
+    height="52">
 
-      <nav class="nav"
-           id="main-nav"
-           aria-label="網站主選單">
+  <span class="brand-title">
+    畢業生流向調查
+  </span>
+</a>
 
-        <a href="index.html">首頁</a>
+    <!-- 手機版選單按鈕 -->
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="開啟導覽選單"
+      aria-controls="main-nav"
+      aria-expanded="false">
+      ☰
+    </button>
 
-        <div class="dropdown">
-          <a href="research.html">
-            研究動機與方法 ▾
-          </a>
-          <ul class="submenu">
-            <li>
-              <a href="research.html#motivation">
-                研究動機
-              </a>
-            </li>
-            <li>
-              <a href="research.html#method">
-                研究方法
-              </a>
-            </li>
-          </ul>
-        </div>
+    <!-- 右側導覽選單 -->
+    <nav
+      class="nav"
+      id="main-nav"
+      aria-label="網站主選單">
 
-        <a href="data.html"
-           class="active"
-           aria-current="page">
-          資料介紹
+      <a href="index.html">首頁</a>
+
+      <div class="dropdown">
+        <a href="research.html">
+          研究動機與方法 ▾
         </a>
 
-        <div class="dropdown">
-          <a href="results.html">
-            研究成果 ▾
-          </a>
-          <ul class="submenu">
-            <li>
-              <a href="results.html#rmarkdown">
-                R Markdown
-              </a>
-            </li>
-            <li>
-              <a href="results.html#rshiny">
-                R Shiny
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="submenu">
+          <li>
+            <a href="research.html#motivation">
+              研究動機
+            </a>
+          </li>
 
-        <a href="conclusion.html">結論</a>
+          <li>
+            <a href="research.html#method">
+              研究方法
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      </nav>
-    </div>
-  </header>
+      <a href="data.html">資料介紹</a>
+
+      <div class="dropdown">
+        <a href="results.html">
+          研究成果 ▾
+        </a>
+
+        <ul class="submenu">
+          <li>
+            <a href="results.html#rmarkdown">
+              R Markdown
+            </a>
+          </li>
+
+          <li>
+            <a href="results.html#rshiny">
+              R Shiny
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="conclusion.html">結論</a>
+
+    </nav>
+  </div>
+</header>
 
 
   <!-- 頁面標題 -->
