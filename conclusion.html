@@ -5,33 +5,61 @@
   <meta charset="utf-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="畢業生流向調查專題結論與未來擴充規劃，包含資料清理、統計報表、R Shiny互動分析及後續發展方向。">
   <title>結論｜畢業生流向調查</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- 導覽列 -->
+
+  <!-- 網站導覽列 -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-icon">🎓</span>
-        畢業生流向調查
+
+      <!-- 系徽與網站標題 -->
+      <a class="brand brand-image"
+         href="index.html"
+         aria-label="畢業生流向調查首頁">
+
+        <img
+          class="brand-logo"
+          src="images/logo-white-transparent.png"
+          alt="資料科學系徽"
+          width="52"
+          height="52">
+
+        <span class="brand-title">
+          畢業生流向調查
+        </span>
       </a>
 
-      <button class="menu-toggle"
-              type="button"
-              aria-label="開啟導覽選單"
-              aria-controls="main-nav"
-              aria-expanded="false">☰</button>
+      <!-- 手機版選單 -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="開啟導覽選單"
+        aria-controls="main-nav"
+        aria-expanded="false">
+        ☰
+      </button>
 
-      <nav class="nav" id="main-nav"
-           aria-label="網站主選單">
-        <a href="index.html">首頁</a>
+      <!-- 主導覽列 -->
+      <nav
+        class="nav"
+        id="main-nav"
+        aria-label="網站主選單">
 
+        <a href="index.html">
+          首頁
+        </a>
+
+        <!-- 研究動機與方法 -->
         <div class="dropdown">
           <a href="research.html">
             研究動機與方法 ▾
           </a>
+
           <ul class="submenu">
             <li>
               <a href="research.html#motivation">
@@ -46,95 +74,272 @@
           </ul>
         </div>
 
-        <a href="data.html">資料介紹</a>
+        <a href="data.html">
+          資料介紹
+        </a>
 
+        <!-- 研究成果 -->
         <div class="dropdown">
-          <a href="results.html">研究成果 ▾</a>
+          <a href="results.html">
+            研究成果 ▾
+          </a>
+
           <ul class="submenu">
             <li>
-              <a href="results.html#one-year">
+              <a href="results.html#rmarkdown">
                 R Markdown
               </a>
             </li>
             <li>
-              <a href="results.html#three-years">
+              <a href="results.html#rshiny">
                 R Shiny
               </a>
             </li>
           </ul>
         </div>
 
-        <a href="conclusion.html"
-           class="active"
-           aria-current="page">結論</a>
+        <a
+          href="conclusion.html"
+          class="active"
+          aria-current="page">
+          結論
+        </a>
+
       </nav>
     </div>
   </header>
 
+
   <!-- 頁面標題 -->
   <section class="page-top">
     <div class="container">
-      <h1>研究結論</h1>
-      <p>專題成果、研究限制與後續規劃。</p>
+      <h1>結論與未來擴充</h1>
+      <p>
+        從114學年度畢業生流向資料整理到
+        統計報表及互動式分析平台。
+      </p>
     </div>
   </section>
 
-  <main class="container content-wrap">
-    <section class="content-card">
 
-      <h2>專題成果</h2>
-      <p>
-        本專題整理畢業滿一年、滿三年與滿五年之
-        畢業生流向問卷資料，
-        規劃以資料轉換、清理、統計分析
-        及互動式網站展示，
-        讓原始問卷資訊更容易閱讀與使用。
-      </p>
+  <!-- 主要內容 -->
+  <main class="container content-wrap conclusion-page">
 
-      <h2>分析發現</h2>
-      <div class="placeholder">
-        實際研究發現尚待依統計圖表與資料核對後補入，
-        不以示意數據代替。
+    <!-- 快速導覽 -->
+    <nav class="subnav"
+         aria-label="結論頁快速導覽">
+      <a href="#conclusion">
+        研究結論
+      </a>
+      <a href="#future">
+        未來擴充
+      </a>
+    </nav>
+
+
+    <!-- ========================== -->
+    <!-- 第一部分：研究結論 -->
+    <!-- ========================== -->
+
+    <section
+      class="conclusion-card"
+      id="conclusion"
+      aria-labelledby="conclusion-title">
+
+      <div class="conclusion-kicker">
+        01 / CONCLUSION
       </div>
 
-      <h2>研究限制</h2>
-      <p>
-        不同畢業階段與學年度的問卷題目、
-        有效回答數可能不同；
-        解讀結果時應考量資料範圍、
-        題項定義與樣本差異，
-        避免直接比較不一致的指標。
+      <h2 id="conclusion-title">
+        研究結論
+      </h2>
+
+      <div class="conclusion-accent"
+           aria-hidden="true"></div>
+
+      <p class="conclusion-lead">
+        本專題整合114學年度畢業滿一年、
+        滿三年及滿五年的就業流向問卷資料，
+        運用R語言進行資料轉換、清理與統計彙整，
+        再透過R Markdown產出報表，
+        並以R Shiny建置互動式查詢與比較介面。
       </p>
 
-      <h2>未來方向</h2>
       <p>
-        持續完善各年度統計資料與分析說明，
-        優化圖表呈現、互動操作及網站閱讀體驗。
+        相較於直接閱讀原始問卷資料，
+        統計圖表、資料表格及互動式查詢
+        能讓使用者更有系統地理解不同調查階段的
+        就業情形、薪資分布與學習經驗，
+        也讓學校能更方便地運用分析結果，
+        作為校務研究、課程規劃與教學改善的參考。
+      </p>
+
+      <!-- 三項研究成果 -->
+      <div class="conclusion-highlights">
+
+        <article class="conclusion-highlight">
+          <span class="conclusion-number">01</span>
+          <h3>資料整理與自動化</h3>
+          <p>
+            統一欄位與選項格式，
+            建立可重複使用的資料清理及報表流程。
+          </p>
+        </article>
+
+        <article class="conclusion-highlight">
+          <span class="conclusion-number">02</span>
+          <h3>統計報表呈現</h3>
+          <p>
+            整合圖表、表格與文字說明，
+            提升調查結果的可讀性。
+          </p>
+        </article>
+
+        <article class="conclusion-highlight">
+          <span class="conclusion-number">03</span>
+          <h3>互動式分析</h3>
+          <p>
+            讓使用者依學年度及不同群組
+            瀏覽、查詢和比較資料。
+          </p>
+        </article>
+
+      </div>
+
+      <!-- 研究範圍提醒 -->
+      <p class="conclusion-caveat">
+        <strong>研究範圍提醒：</strong>
+        目前結論著重本專題完成的資料處理與展示成果；
+        不同階段的問卷題項及有效回答數可能不同，
+        具體差異與影響仍須以實際統計結果判讀，
+        不直接推論因果關係。
       </p>
 
     </section>
+
+
+    <!-- ========================== -->
+    <!-- 第二部分：未來擴充 -->
+    <!-- ========================== -->
+
+    <section
+      class="conclusion-card"
+      id="future"
+      aria-labelledby="future-title">
+
+      <div class="conclusion-kicker">
+        02 / FUTURE DEVELOPMENT
+      </div>
+
+      <h2 id="future-title">
+        未來擴充
+      </h2>
+
+      <div class="conclusion-accent"
+           aria-hidden="true"></div>
+
+      <p>
+        在現有資料處理、統計報表與互動式網站的基礎上，
+        後續可朝長期追蹤、資料匯入及平台管理
+        三個方向發展。
+      </p>
+
+      <div class="future-list">
+
+        <!-- 未來擴充 1 -->
+        <article class="future-item">
+          <div class="future-index">
+            01
+          </div>
+
+          <div>
+            <h3>跨學年度長期追蹤</h3>
+            <p>
+              逐年串接並整合調查資料，
+              在欄位定義與樣本可比較的前提下，
+              分析歷年的就業、薪資與升學變化；
+              累積足夠資料後，
+              再評估建立長期趨勢分析或預測模型。
+            </p>
+          </div>
+        </article>
+
+        <!-- 未來擴充 2 -->
+        <article class="future-item">
+          <div class="future-index">
+            02
+          </div>
+
+          <div>
+            <h3>資料匯入前端化</h3>
+            <p>
+              規劃在網站提供資料上傳與格式檢核介面，
+              讓授權使用者匯入新年度問卷資料，
+              並執行既定的清理與報表流程，
+              減少重複手動處理的工作。
+            </p>
+          </div>
+        </article>
+
+        <!-- 未來擴充 3 -->
+        <article class="future-item">
+          <div class="future-index">
+            03
+          </div>
+
+          <div>
+            <h3>雲端部署與分級權限管理</h3>
+            <p>
+              進一步規劃安全的雲端部署、
+              帳號驗證與存取權限，
+              依使用者角色提供相應的資料查詢範圍，
+              支援各系院主管與校務單位使用，
+              並兼顧個人資料保護。
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- 未來規劃說明 -->
+      <p class="conclusion-caveat">
+        <strong>註：</strong>
+        以上為未來發展方向，
+        非目前已經完成的系統功能。
+        資料上傳、預測模型及權限管理
+        需經後續開發、驗證與資安評估。
+      </p>
+
+    </section>
+
   </main>
 
-  <!-- 頁尾 -->
+
+  <!-- 網站頁尾 -->
   <footer>
     <div class="container footer-inner">
+
       <span>
         畢業生流向調查｜專題成果展示 ·
         靜宜大學資料科學暨大數據分析與應用學系
       </span>
+
       <span>
         版型參考：
         <a href="https://html5up.net/verti">
           HTML5 UP Verti
-        </a> ·
+        </a>
+        ·
         <a href="https://creativecommons.org/licenses/by/3.0/">
           CC BY 3.0
         </a>
       </span>
+
     </div>
   </footer>
 
+  <!-- 共用 JavaScript -->
   <script src="script.js" defer></script>
+
 </body>
 </html>
-
