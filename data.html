@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <!-- 共用網站導覽列 -->
   <header class="site-header">
     <div class="container header-inner">
@@ -45,26 +46,38 @@
           </a>
           <ul class="submenu">
             <li>
-              <a href="research.html#motivation">研究動機</a>
+              <a href="research.html#motivation">
+                研究動機
+              </a>
             </li>
             <li>
-              <a href="research.html#method">研究方法</a>
+              <a href="research.html#method">
+                研究方法
+              </a>
             </li>
           </ul>
         </div>
 
         <a href="data.html"
            class="active"
-           aria-current="page">資料介紹</a>
+           aria-current="page">
+          資料介紹
+        </a>
 
         <div class="dropdown">
-          <a href="results.html">研究成果 ▾</a>
+          <a href="results.html">
+            研究成果 ▾
+          </a>
           <ul class="submenu">
             <li>
-              <a href="results.html#rmarkdown">R Markdown</a>
+              <a href="results.html#rmarkdown">
+                R Markdown
+              </a>
             </li>
             <li>
-              <a href="results.html#rshiny">R Shiny</a>
+              <a href="results.html#rshiny">
+                R Shiny
+              </a>
             </li>
           </ul>
         </div>
@@ -74,6 +87,7 @@
       </nav>
     </div>
   </header>
+
 
   <!-- 頁面標題 -->
   <section class="page-top">
@@ -86,7 +100,7 @@
     </div>
   </section>
 
-  <!-- 網頁主要內容 -->
+
   <main class="container content-wrap data-page">
 
     <!-- 快速導覽 -->
@@ -96,7 +110,11 @@
       <a href="#questionnaire">問卷內容</a>
     </nav>
 
+
+    <!-- =========================== -->
     <!-- 第一部分：資料摘要 -->
+    <!-- =========================== -->
+
     <section class="content-card data-section"
              id="summary"
              aria-labelledby="summary-title">
@@ -111,8 +129,8 @@
       <p>
         本專題以<strong>114學年度</strong>畢業滿一年、
         滿三年及滿五年的畢業生就業流向調查問卷
-        為分析資料。依調查階段整理受訪者的就業
-        狀況、工作類型、收入分布與在學學習經驗，
+        為分析資料。依調查階段整理受訪者的就業狀況、
+        工作類型、收入分布與在學學習經驗，
         作為後續統計分析及視覺化的基礎。
       </p>
 
@@ -146,14 +164,15 @@
 
       </div>
 
+      <!-- 調查資料表 -->
       <h3>調查資料概況</h3>
+
       <p class="data-hint">
         下表保留有效樣本數欄位，
         請依各階段實際統計結果填入；
         目前不以示意數字代替。
       </p>
 
-      <!-- 統計資料表 -->
       <div class="data-table-wrap">
         <table class="data-table">
           <thead>
@@ -163,6 +182,7 @@
               <th scope="col">有效樣本數</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
               <th scope="row">畢業滿一年</th>
@@ -198,7 +218,11 @@
 
     </section>
 
+
+    <!-- =========================== -->
     <!-- 第二部分：問卷內容 -->
+    <!-- =========================== -->
+
     <section class="content-card data-section"
              id="questionnaire"
              aria-labelledby="questionnaire-title">
@@ -211,129 +235,265 @@
       </div>
 
       <p>
-        本專題主要分析畢業生的
-        <strong>
-          就業情形、工作與收入、在學期間的學習經驗，
-          以及學校應加強的能力
-        </strong>。
-        為方便閱讀，下方依主題整理；
-        各階段正式題目與選項仍以114學年度
-        原始問卷為準。
+        依據<strong>114 學年度畢業滿一年、
+        滿三年及滿五年</strong>三份問卷資料，
+        整理各階段的主要題目。
+        三份問卷題號、分類與調查重點不完全相同，
+        以下分別呈現，方便對照。
       </p>
 
       <p class="data-hint">
-        點擊分類可展開查看本專題所整理的主要分析題項。
+        點選調查階段可展開主要題目。
+        本頁依原始 Excel 問卷欄位摘要整理，
+        非完整逐字題本；
+        個人識別資料與受訪者回答不公開。
       </p>
 
-      <!-- 可展開的問卷主題 -->
-      <div class="questionnaire-list">
 
-        <!-- 主題一 -->
-        <details class="question-group" open>
+      <div class="survey-stage-list">
+
+        <!-- ======================= -->
+        <!-- 畢業滿一年 -->
+        <!-- ======================= -->
+
+        <details class="survey-stage"
+                 id="survey-one" open>
+
           <summary>
-            <span class="question-num">01</span>
-            <span class="question-heading">就業情形</span>
-            <span class="question-desc">目前工作與未就業狀況</span>
-            <span class="question-chevron"
-                  aria-hidden="true">⌄</span>
-          </summary>
+            <span class="survey-stage-index">01</span>
 
-          <div class="question-content">
-            <ul>
-              <li>目前工作狀況</li>
-              <li>目前未就業原因</li>
-            </ul>
-          </div>
-        </details>
-
-        <!-- 主題二 -->
-        <details class="question-group">
-          <summary>
-            <span class="question-num">02</span>
-            <span class="question-heading">工作與收入</span>
-            <span class="question-desc">職業類型及薪資分布</span>
-            <span class="question-chevron"
-                  aria-hidden="true">⌄</span>
-          </summary>
-
-          <div class="question-content">
-            <ul>
-              <li>工作職業類型</li>
-              <li>平均月收入</li>
-            </ul>
-          </div>
-        </details>
-
-        <!-- 主題三 -->
-        <details class="question-group">
-          <summary>
-            <span class="question-num">03</span>
-            <span class="question-heading">學習經驗</span>
-            <span class="question-desc">
-              在學期間的學習是否有幫助
+            <span class="survey-stage-heading">
+              <strong>畢業滿一年</strong>
+              <small>
+                就業流向、就業條件、學習回饋
+              </small>
             </span>
-            <span class="question-chevron"
+
+            <span class="survey-stage-arrow"
                   aria-hidden="true">⌄</span>
           </summary>
 
-          <div class="question-content">
-            <ul>
-              <li>在學期間對目前工作有幫助的學習經驗</li>
-            </ul>
+          <div class="survey-stage-content">
+
+            <div class="survey-topic">
+              <h4>第1部分｜就業流向</h4>
+              <ul>
+                <li>目前工作狀況與任職機構性質</li>
+                <li>工作職業類型（工作內容或屬性）</li>
+                <li>畢業後找到第一份工作的時間</li>
+                <li>目前工作之就業資訊來源</li>
+                <li>目前工作平均每月收入</li>
+                <li>主要工作所在地點（境內／境外）</li>
+                <li>
+                  目前未就業原因、求職情形與準備考試類型
+                </li>
+              </ul>
+            </div>
+
+            <div class="survey-topic">
+              <h4>第2部分｜就業條件</h4>
+              <ul>
+                <li>目前專業能力與工作要求的相符程度</li>
+                <li>工作是否需要專業證照</li>
+                <li>已考取證照對目前工作的助益</li>
+                <li>目前工作的整體滿意度</li>
+              </ul>
+            </div>
+
+            <div class="survey-topic">
+              <h4>第3部分｜學習回饋</h4>
+              <ul>
+                <li>
+                  目前工作與原系所專業訓練課程的相符程度
+                </li>
+                <li>
+                  在學期間對目前工作有幫助的學習經驗
+                  （最多選3項）
+                </li>
+                <li>
+                  是否為工作或生涯發展而進修、準備考試
+                </li>
+                <li>
+                  曾參與的學校職涯活動與就業服務
+                  （最多選3項）
+                </li>
+                <li>
+                  就職公司單位、部門、職稱及
+                  實習／就業機會相關題項
+                </li>
+              </ul>
+            </div>
+
           </div>
         </details>
 
-        <!-- 主題四 -->
-        <details class="question-group">
+
+        <!-- ======================= -->
+        <!-- 畢業滿三年 -->
+        <!-- ======================= -->
+
+        <details class="survey-stage"
+                 id="survey-three">
+
           <summary>
-            <span class="question-num">04</span>
-            <span class="question-heading">能力培養</span>
-            <span class="question-desc">
-              對學校培育方向的回饋
+            <span class="survey-stage-index">02</span>
+
+            <span class="survey-stage-heading">
+              <strong>畢業滿三年</strong>
+              <small>
+                就業流向、就業條件、學習回饋
+              </small>
             </span>
-            <span class="question-chevron"
+
+            <span class="survey-stage-arrow"
                   aria-hidden="true">⌄</span>
           </summary>
 
-          <div class="question-content">
-            <ul>
-              <li>學校應加強的能力</li>
-            </ul>
+          <div class="survey-stage-content">
+
+            <div class="survey-topic">
+              <h4>第1部分｜就業流向</h4>
+              <ul>
+                <li>目前工作狀況與任職機構性質</li>
+                <li>工作職業類型（工作內容或屬性）</li>
+                <li>
+                  畢業後是否轉換公司、轉職次數與原因
+                </li>
+                <li>目前工作平均每月收入</li>
+                <li>主要工作所在地點（境內／境外）</li>
+                <li>
+                  目前未就業原因、求職情形與準備考試類型
+                </li>
+              </ul>
+            </div>
+
+            <div class="survey-topic">
+              <h4>第2部分｜就業條件</h4>
+              <ul>
+                <li>目前專業能力與工作要求的相符程度</li>
+                <li>工作是否需要專業證照</li>
+                <li>目前工作的整體滿意度</li>
+              </ul>
+            </div>
+
+            <div class="survey-topic">
+              <h4>第3部分｜學習回饋</h4>
+              <ul>
+                <li>
+                  目前工作與原系所專業訓練課程的相符程度
+                </li>
+                <li>
+                  在學期間對目前工作有幫助的學習經驗
+                  （最多選3項）
+                </li>
+                <li>是否規劃進修以提升專業能力</li>
+                <li>
+                  進修或考試對薪資待遇、升遷及滿意度的幫助
+                </li>
+                <li>
+                  學校應加強學生的工作能力（最多選3項）
+                </li>
+                <li>
+                  就職公司單位、部門、職稱及
+                  實習／就業機會相關題項
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </details>
+
+
+        <!-- ======================= -->
+        <!-- 畢業滿五年 -->
+        <!-- ======================= -->
+
+        <details class="survey-stage"
+                 id="survey-five">
+
+          <summary>
+            <span class="survey-stage-index">03</span>
+
+            <span class="survey-stage-heading">
+              <strong>畢業滿五年</strong>
+              <small>就業流向、學習回饋</small>
+            </span>
+
+            <span class="survey-stage-arrow"
+                  aria-hidden="true">⌄</span>
+          </summary>
+
+          <div class="survey-stage-content">
+
+            <div class="survey-topic">
+              <h4>第1部分｜就業流向</h4>
+              <ul>
+                <li>目前工作狀況與任職機構性質</li>
+                <li>目前服務的部門別</li>
+                <li>是否擔任主管及管理人數</li>
+                <li>目前主要工作行業類別</li>
+                <li>目前工作平均每月收入</li>
+                <li>主要工作所在地點（境內／境外）</li>
+                <li>
+                  目前未就業原因、求職情形與準備考試類型
+                </li>
+              </ul>
+            </div>
+
+            <div class="survey-topic">
+              <h4>第2部分｜學習回饋</h4>
+              <ul>
+                <li>
+                  原系所專業訓練課程對目前工作的幫助程度
+                </li>
+                <li>
+                  在學期間對目前工作有幫助的學習經驗
+                  （最多選3項）
+                </li>
+                <li>
+                  學校最應加強學弟妹的能力
+                  （最多選3項）
+                </li>
+                <li>
+                  學校對個人哪些能力的培養最有幫助
+                  （最多選3項）
+                </li>
+                <li>
+                  如果有進修機會，最想進修的學門
+                </li>
+                <li>
+                  就職公司、職稱及實習／就業機會相關題項
+                </li>
+              </ul>
+            </div>
+
           </div>
         </details>
 
       </div>
 
       <div class="data-note">
-        <strong>問卷差異：</strong>
-        畢業滿一年、滿三年及滿五年的問卷題目與
-        選項不一定相同，本頁先展示共同的分析主題，
-        不代表每個階段都有完全相同的題項。
-      </div>
-
-      <!-- 問卷附件預留區 -->
-      <div class="data-attachment">
-        <div>
-          <strong>正式問卷文件</strong>
-          <p>
-            日後可在此加入各調查階段的問卷 PDF
-            或題目截圖。
-          </p>
-        </div>
-        <span class="data-pending">文件連結待補</span>
+        <strong>題型提醒：</strong>
+        部分學習經驗與能力題目可複選（最多三項），
+        不同階段的題目與問法不完全相同。
+        問卷的「就業流向／就業條件／學習回饋」
+        分類亦依原始檔案呈現。
       </div>
 
     </section>
 
   </main>
 
+
   <!-- 網站頁尾 -->
   <footer>
     <div class="container footer-inner">
+
       <span>
         畢業生流向調查｜專題成果展示 ·
         靜宜大學資料科學暨大數據分析與應用學系
       </span>
+
       <span>
         版型參考：
         <a href="https://html5up.net/verti">
@@ -344,10 +504,12 @@
           CC BY 3.0
         </a>
       </span>
+
     </div>
   </footer>
 
+  <!-- 共用 JavaScript -->
   <script src="script.js" defer></script>
+
 </body>
 </html>
-
