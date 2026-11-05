@@ -1,27 +1,27 @@
 
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="114學年度畢業生就業流向調查的資料摘要與問卷內容介紹。">
   <title>資料介紹｜畢業生流向調查</title>
-
-  <!-- 共用 CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <!-- 網站導覽列 -->
+  <!-- 共用網站導覽列 -->
   <header class="site-header">
     <div class="container header-inner">
 
-      <a class="brand" href="index.html">
-        <span class="brand-icon">🎓</span>
-        畢業生流向調查
+      <a class="brand brand-image"
+         href="index.html"
+         aria-label="畢業生流向調查首頁">
+        <img
+          src="images/logo.png"
+          alt="畢業生流向調查"
+          width="306"
+          height="55">
       </a>
 
       <button
@@ -33,383 +33,307 @@
         ☰
       </button>
 
-      <nav
-        class="nav"
-        id="main-nav"
-        aria-label="網站主選單">
+      <nav class="nav"
+           id="main-nav"
+           aria-label="網站主選單">
 
-        <!-- 首頁 -->
         <a href="index.html">首頁</a>
 
-        <!-- 研究方法與動機 -->
         <div class="dropdown">
-
           <a href="research.html">
             研究動機與方法 ▾
           </a>
-
           <ul class="submenu">
-
             <li>
-              <a href="research.html#motivation">
-                研究動機
-              </a>
+              <a href="research.html#motivation">研究動機</a>
             </li>
-
             <li>
-              <a href="research.html#method">
-                研究方法
-              </a>
+              <a href="research.html#method">研究方法</a>
             </li>
-
           </ul>
         </div>
 
-        <!-- 資料介紹 -->
-        <a
-          href="data.html"
-          class="active"
-          aria-current="page">
-          資料介紹
-        </a>
+        <a href="data.html"
+           class="active"
+           aria-current="page">資料介紹</a>
 
-        <!-- 研究成果 -->
         <div class="dropdown">
-
-          <a href="results.html">
-            研究成果 ▾
-          </a>
-
+          <a href="results.html">研究成果 ▾</a>
           <ul class="submenu">
-
             <li>
-              <a href="results.html#one-year">
-                R Markdown
-              </a>
+              <a href="results.html#rmarkdown">R Markdown</a>
             </li>
-
             <li>
-              <a href="results.html#three-years">
-                R Shiny
-              </a>
+              <a href="results.html#rshiny">R Shiny</a>
             </li>
           </ul>
         </div>
 
-        <!-- 結論 -->
         <a href="conclusion.html">結論</a>
 
       </nav>
     </div>
   </header>
 
-
   <!-- 頁面標題 -->
   <section class="page-top">
-
     <div class="container">
-
       <h1>資料介紹</h1>
-
       <p>
-        資料摘要與問卷內容：
-        畢業滿一年、三年及五年的不同學年度調查資料。
+        114學年度畢業滿一年、滿三年及滿五年之
+        畢業生就業流向調查：資料摘要與問卷內容。
       </p>
-
     </div>
   </section>
 
-
   <!-- 網頁主要內容 -->
-  <main class="container content-wrap">
+  <main class="container content-wrap data-page">
 
-    <!-- 頁面快速導覽 -->
-    <nav
-      class="subnav"
-      aria-label="資料介紹頁快速導覽">
-
-      <a href="#summary">
-        資料摘要
-      </a>
-
-      <a href="#questionnaire">
-        問卷內容
-      </a>
-
+    <!-- 快速導覽 -->
+    <nav class="subnav"
+         aria-label="資料介紹快速導覽">
+      <a href="#summary">資料摘要</a>
+      <a href="#questionnaire">問卷內容</a>
     </nav>
 
-
     <!-- 第一部分：資料摘要 -->
-    <section
-      class="content-card"
-      id="summary">
+    <section class="content-card data-section"
+             id="summary"
+             aria-labelledby="summary-title">
 
-      <h2>資料摘要</h2>
+      <div class="data-section-heading">
+        <span class="data-section-index">
+          01 / DATA SUMMARY
+        </span>
+        <h2 id="summary-title">資料摘要</h2>
+      </div>
 
       <p>
-        本專題以畢業滿一年、滿三年及滿五年的
-        畢業生流向調查問卷為分析資料，
-        涵蓋不同學年度。
-        依調查階段整理資料後，
-        呈現受訪者的就業狀態、工作情形、
-        收入分布與在學學習經驗等資訊。
+        本專題以<strong>114學年度</strong>畢業滿一年、
+        滿三年及滿五年的畢業生就業流向調查問卷
+        為分析資料。依調查階段整理受訪者的就業
+        狀況、工作類型、收入分布與在學學習經驗，
+        作為後續統計分析及視覺化的基礎。
       </p>
 
-      <!-- 調查類別 -->
-      <div class="chips">
+      <!-- 三張資料概況卡 -->
+      <div class="data-overview"
+           aria-label="調查基本資訊">
 
-        <span class="chip">
-          畢業滿一年
-        </span>
+        <article class="data-overview-card">
+          <span class="data-overview-kicker">
+            調查學年度
+          </span>
+          <strong>114</strong>
+          <span>學年度</span>
+        </article>
 
-        <span class="chip">
-          畢業滿三年
-        </span>
+        <article class="data-overview-card">
+          <span class="data-overview-kicker">
+            調查階段
+          </span>
+          <strong>3</strong>
+          <span>畢業滿一年、三年、五年</span>
+        </article>
 
-        <span class="chip">
-          畢業滿五年
-        </span>
+        <article class="data-overview-card">
+          <span class="data-overview-kicker">
+            分析資料
+          </span>
+          <strong>問卷</strong>
+          <span>依實際有效回答整理</span>
+        </article>
 
       </div>
 
+      <h3>調查資料概況</h3>
+      <p class="data-hint">
+        下表保留有效樣本數欄位，
+        請依各階段實際統計結果填入；
+        目前不以示意數字代替。
+      </p>
 
-      <!-- 資料基本資訊 -->
-      <h3>資料基本資訊</h3>
-
-      <div style="overflow-x: auto;">
-
-        <table style="
-          width: 100%;
-          border-collapse: collapse;
-          min-width: 530px;
-        ">
-
+      <!-- 統計資料表 -->
+      <div class="data-table-wrap">
+        <table class="data-table">
           <thead>
-
-            <tr style="background: #edf3ff;">
-
-              <th style="
-                padding: 12px;
-                text-align: left;
-              ">
-                調查類別
-              </th>
-
-              <th style="
-                padding: 12px;
-                text-align: left;
-              ">
-                資料學年度
-              </th>
-
-              <th style="
-                padding: 12px;
-                text-align: left;
-              ">
-                有效樣本數
-              </th>
-
+            <tr>
+              <th scope="col">調查階段</th>
+              <th scope="col">調查學年度</th>
+              <th scope="col">有效樣本數</th>
             </tr>
-
           </thead>
-
           <tbody>
-
-            <!-- 畢業滿一年 -->
             <tr>
-
-              <td style="
-                padding: 12px;
-                border-bottom: 1px solid #e8edf6;
-              ">
-                畢業滿一年
+              <th scope="row">畢業滿一年</th>
+              <td>114</td>
+              <td>
+                <span class="data-pending">待填寫</span>
               </td>
-
-              <td style="
-                padding: 12px;
-                border-bottom: 1px solid #e8edf6;
-              ">
-                待填寫
-              </td>
-
-              <td style="
-                padding: 12px;
-                border-bottom: 1px solid #e8edf6;
-              ">
-                待填寫
-              </td>
-
             </tr>
-
-            <!-- 畢業滿三年 -->
             <tr>
-
-              <td style="
-                padding: 12px;
-                border-bottom: 1px solid #e8edf6;
-              ">
-                畢業滿三年
+              <th scope="row">畢業滿三年</th>
+              <td>114</td>
+              <td>
+                <span class="data-pending">待填寫</span>
               </td>
-
-              <td style="
-                padding: 12px;
-                border-bottom: 1px solid #e8edf6;
-              ">
-                待填寫
-              </td>
-
-              <td style="
-                padding: 12px;
-                border-bottom: 1px solid #e8edf6;
-              ">
-                待填寫
-              </td>
-
             </tr>
-
-            <!-- 畢業滿五年 -->
             <tr>
-
-              <td style="padding: 12px;">
-                畢業滿五年
+              <th scope="row">畢業滿五年</th>
+              <td>114</td>
+              <td>
+                <span class="data-pending">待填寫</span>
               </td>
-
-              <td style="padding: 12px;">
-                待填寫
-              </td>
-
-              <td style="padding: 12px;">
-                待填寫
-              </td>
-
             </tr>
-
           </tbody>
-
         </table>
-
       </div>
 
-      <p class="note">
-        各調查階段可能涵蓋多個學年度，
-        正式上線時請依實際資料逐年列示，
-        不要直接合併成單一學年度。
-      </p>
-
-
-      <!-- 資料整理原則 -->
-      <h3>資料整理原則</h3>
-
-      <p>
-        依調查階段、學年度與問卷題項
-        整理原始資料。
-        計算統計結果時，
-        依各題的有效回答數處理；
-        複選題可複選，
-        因此各選項比例加總未必為 100%。
-      </p>
+      <div class="data-note">
+        <strong>統計說明：</strong>
+        各分析題目的有效回答數可能不同；
+        單選題與複選題採用適合的統計分母，
+        複選題選項比例加總不一定為100%。
+      </div>
 
     </section>
 
-
     <!-- 第二部分：問卷內容 -->
-    <section
-      class="content-card"
-      id="questionnaire">
+    <section class="content-card data-section"
+             id="questionnaire"
+             aria-labelledby="questionnaire-title">
 
-      <h2>問卷內容</h2>
+      <div class="data-section-heading">
+        <span class="data-section-index">
+          02 / QUESTIONNAIRE CONTENT
+        </span>
+        <h2 id="questionnaire-title">問卷內容</h2>
+      </div>
 
       <p>
-        問卷涵蓋畢業生就業情形、
-        工作與收入、學習經驗及
-        學校可加強的能力等主題。
-
-        以下提供本專題使用的主要分析主題，
-        實際題目名稱與選項內容
-        應以各階段、各學年度的原始問卷為準。
+        本專題主要分析畢業生的
+        <strong>
+          就業情形、工作與收入、在學期間的學習經驗，
+          以及學校應加強的能力
+        </strong>。
+        為方便閱讀，下方依主題整理；
+        各階段正式題目與選項仍以114學年度
+        原始問卷為準。
       </p>
 
+      <p class="data-hint">
+        點擊分類可展開查看本專題所整理的主要分析題項。
+      </p>
 
-      <!-- 主要問卷主題 -->
-      <h3>主要問卷分析主題</h3>
+      <!-- 可展開的問卷主題 -->
+      <div class="questionnaire-list">
 
-      <div class="chips">
+        <!-- 主題一 -->
+        <details class="question-group" open>
+          <summary>
+            <span class="question-num">01</span>
+            <span class="question-heading">就業情形</span>
+            <span class="question-desc">目前工作與未就業狀況</span>
+            <span class="question-chevron"
+                  aria-hidden="true">⌄</span>
+          </summary>
 
-        <span class="chip">
-          目前工作狀況
-        </span>
+          <div class="question-content">
+            <ul>
+              <li>目前工作狀況</li>
+              <li>目前未就業原因</li>
+            </ul>
+          </div>
+        </details>
 
-        <span class="chip">
-          工作職業類型
-        </span>
+        <!-- 主題二 -->
+        <details class="question-group">
+          <summary>
+            <span class="question-num">02</span>
+            <span class="question-heading">工作與收入</span>
+            <span class="question-desc">職業類型及薪資分布</span>
+            <span class="question-chevron"
+                  aria-hidden="true">⌄</span>
+          </summary>
 
-        <span class="chip">
-          平均月收入
-        </span>
+          <div class="question-content">
+            <ul>
+              <li>工作職業類型</li>
+              <li>平均月收入</li>
+            </ul>
+          </div>
+        </details>
 
-        <span class="chip">
-          目前未就業原因
-        </span>
+        <!-- 主題三 -->
+        <details class="question-group">
+          <summary>
+            <span class="question-num">03</span>
+            <span class="question-heading">學習經驗</span>
+            <span class="question-desc">
+              在學期間的學習是否有幫助
+            </span>
+            <span class="question-chevron"
+                  aria-hidden="true">⌄</span>
+          </summary>
 
-        <span class="chip">
-          在學期間有幫助的學習經驗
-        </span>
+          <div class="question-content">
+            <ul>
+              <li>在學期間對目前工作有幫助的學習經驗</li>
+            </ul>
+          </div>
+        </details>
 
-        <span class="chip">
-          學校應加強的能力
-        </span>
+        <!-- 主題四 -->
+        <details class="question-group">
+          <summary>
+            <span class="question-num">04</span>
+            <span class="question-heading">能力培養</span>
+            <span class="question-desc">
+              對學校培育方向的回饋
+            </span>
+            <span class="question-chevron"
+                  aria-hidden="true">⌄</span>
+          </summary>
+
+          <div class="question-content">
+            <ul>
+              <li>學校應加強的能力</li>
+            </ul>
+          </div>
+        </details>
 
       </div>
 
-
-      <!-- 不同調查階段 -->
-      <h3>不同調查階段</h3>
-
-      <p>
-        <strong>畢業滿一年：</strong>
-        呈現對應學年度的問卷題項與調查內容。
-      </p>
-
-      <p>
-        <strong>畢業滿三年：</strong>
-        呈現對應學年度的問卷題項與調查內容。
-      </p>
-
-      <p>
-        <strong>畢業滿五年：</strong>
-        呈現對應學年度的問卷題項與調查內容。
-      </p>
-
-
-      <!-- 正式問卷預留區 -->
-      <div class="placeholder">
-
-        預留各階段的正式問卷題目、
-        選項及問卷截圖／PDF 連結，
-        待取得原始問卷後補入。
-
+      <div class="data-note">
+        <strong>問卷差異：</strong>
+        畢業滿一年、滿三年及滿五年的問卷題目與
+        選項不一定相同，本頁先展示共同的分析主題，
+        不代表每個階段都有完全相同的題項。
       </div>
 
-      <p class="note">
-        題項並不一定在三個調查階段完全相同，
-        因此本頁不預先假設問卷內容一致。
-      </p>
+      <!-- 問卷附件預留區 -->
+      <div class="data-attachment">
+        <div>
+          <strong>正式問卷文件</strong>
+          <p>
+            日後可在此加入各調查階段的問卷 PDF
+            或題目截圖。
+          </p>
+        </div>
+        <span class="data-pending">文件連結待補</span>
+      </div>
 
     </section>
 
   </main>
 
-
   <!-- 網站頁尾 -->
   <footer>
-
     <div class="container footer-inner">
-
       <span>
         畢業生流向調查｜專題成果展示 ·
-        靜宜大學資訊科學暨大數據分析與應用學系
+        靜宜大學資料科學暨大數據分析與應用學系
       </span>
-
       <span>
         版型參考：
         <a href="https://html5up.net/verti">
@@ -420,14 +344,10 @@
           CC BY 3.0
         </a>
       </span>
-
     </div>
-
   </footer>
 
-
-  <!-- 共用 JavaScript -->
   <script src="script.js" defer></script>
-
 </body>
 </html>
+
